@@ -1,0 +1,38 @@
+#cont-menu {
+  list-style: none;
+  font-size: 0;
+  width: 100%; }
+  #cont-menu .ul-cont-submenus {
+    position: absolute;
+    display: none; }
+    #cont-menu .ul-cont-submenus li {
+      display: block; }
+  #cont-menu li:hover {
+    background-color: aquamarine; }
+    #cont-menu li:hover .ul-cont-submenus {
+      display: block;
+      background-color: #43fdbc; }
+  #cont-menu li a {
+    color: black;
+    text-decoration: none; }
+
+.li-cont-submenus-menu {
+  display: inline-block;
+  width: 18%;
+  position: relative;
+  font-size: 14px;
+  text-align: center; }
+
+.li-submenus-menu {
+  width: 100%;
+  text-align: center; }
+
+header {
+  display: flex;
+  width: 100%; }
+
+#cont-imagen-menu {
+  width: 10%; }
+  #cont-imagen-menu #foto-menu {
+    width: 100%;
+    border-radius: 100%; }
