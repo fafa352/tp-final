@@ -1,7 +1,18 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 #cont-menu {
   list-style: none;
   font-size: 0;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  #cont-menu .nav__ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
   #cont-menu .ul-cont-submenus {
     position: absolute;
     display: none; }
@@ -13,12 +24,11 @@
       display: block;
       background-color: #43fdbc; }
   #cont-menu li a {
-    color: black;
+    color: white;
     text-decoration: none; }
 
 .li-cont-submenus-menu {
   display: inline-block;
-  width: 18%;
   position: relative;
   font-size: 14px;
   text-align: center; }
@@ -29,10 +39,23 @@
 
 header {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  background-image: url(../assets/imagenes/gif-de-verdad.gif); }
 
 #cont-imagen-menu {
   width: 10%; }
   #cont-imagen-menu #foto-menu {
     width: 100%;
-    border-radius: 100%; }
+    border-radius: 100%;
+    border: solid white; }
+
+#tit-pag {
+  background-image: url(../assets/imagenes/gif-de-verdad.gif);
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  #tit-pag h1 {
+    color: white; }
+
+.img-noti {
+  width: 100%; }

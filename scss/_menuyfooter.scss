@@ -1,7 +1,17 @@
+
 #cont-menu{
     list-style: none;
     font-size: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .nav__ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 
     .ul-cont-submenus{
         position: absolute;
@@ -22,7 +32,7 @@
         }
 
         a{
-            color: rgb(0, 0, 0);
+            color: white;
             text-decoration: none;
         }
     }
@@ -30,7 +40,6 @@
 
 .li-cont-submenus-menu{
     display: inline-block;
-    width: 18%;
     position: relative;
     font-size: 14px;
     text-align: center;
@@ -45,6 +54,7 @@
 header{
     display: flex;
     width: 100%;
+    background-image: url(../assets/imagenes/gif-de-verdad.gif);
 }
 
 #cont-imagen-menu{
@@ -54,5 +64,15 @@ header{
     #foto-menu{
         width: 100%;
         border-radius: 100%;
+        border: solid white;
+    }
+}
+#tit-pag{
+    background-image: url(../assets/imagenes/gif-de-verdad.gif);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    h1{
+        color: white;
     }
 }
