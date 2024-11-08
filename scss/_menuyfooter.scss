@@ -1,4 +1,13 @@
 
+$colornegro:#261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+
+
+
+
 #cont-menu{
     list-style: none;
     font-size: 0;
@@ -11,29 +20,38 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
     .ul-cont-submenus{
         position: absolute;
         display: none;
 
+
         li{
             display: block;
         }
     }
 
-    li{
+    .li-cont-submenus-menu{
         &:hover{
-            background-color: aquamarine;
+            background-color: $colorvioletaoscuro;
+            width: 18%;
             .ul-cont-submenus{
                 display: block;
-                background-color: rgb(67, 253, 188);
+                background-color: $colorvioletaoscuro;
+                width: 100%;
+
+                
+                
             }
         }
 
         a{
             color: white;
             text-decoration: none;
+            font-weight: 1000;
+
         }
     }
 }
@@ -41,7 +59,7 @@
 .li-cont-submenus-menu{
     display: inline-block;
     position: relative;
-    font-size: 14px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -52,7 +70,7 @@
 }
 
 header{
-    display: flex;
+
     width: 100%;
     background-image: url(../assets/imagenes/gif-de-verdad.gif);
 }
@@ -71,7 +89,7 @@ header{
     background-image: url(../assets/imagenes/gif-de-verdad.gif);
     display: flex;
     justify-content: center;
-    text-align: center;
+
     h1{
         color: white;
     }
