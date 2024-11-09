@@ -94,3 +94,49 @@ header{
         color: white;
     }
 }
+
+
+footer {
+    background-color: $colorvioletaoscuros;
+    color: $text-color;
+    
+  
+    .map-container iframe {
+      border-radius: 8px; 
+    }
+  
+    
+    h5 {
+      color: $colorvioleta; 
+      font-weight: bold; 
+      margin-bottom: 15px;
+    }
+  
+    .container {
+      padding: 0 15px;
+    }
+  
+  
+    @media (max-width: 768px) {
+      .footer-image {
+        display: none; 
+      }
+  
+      .map-container iframe {
+        height: 200px; 
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .row {
+        flex-direction: column; 
+        text-align: center;
+      }
+  
+      .map-container iframe {
+        height: 250px;
+      }
+    }
+  }
+  
+  

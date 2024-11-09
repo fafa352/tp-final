@@ -12,25 +12,29 @@
   #cont-menu .nav__ul {
     width: 100%;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center; }
   #cont-menu .ul-cont-submenus {
     position: absolute;
     display: none; }
     #cont-menu .ul-cont-submenus li {
       display: block; }
-  #cont-menu li:hover {
-    background-color: aquamarine; }
-    #cont-menu li:hover .ul-cont-submenus {
+  #cont-menu .li-cont-submenus-menu:hover {
+    background-color: #4F2859;
+    width: 18%; }
+    #cont-menu .li-cont-submenus-menu:hover .ul-cont-submenus {
       display: block;
-      background-color: #43fdbc; }
-  #cont-menu li a {
+      background-color: #4F2859;
+      width: 100%; }
+  #cont-menu .li-cont-submenus-menu a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 1000; }
 
 .li-cont-submenus-menu {
   display: inline-block;
   position: relative;
-  font-size: 14px;
+  font-size: 22px;
   text-align: center; }
 
 .li-submenus-menu {
@@ -38,7 +42,6 @@
   text-align: center; }
 
 header {
-  display: flex;
   width: 100%;
   background-image: url(../assets/imagenes/gif-de-verdad.gif); }
 
@@ -52,10 +55,43 @@ header {
 #tit-pag {
   background-image: url(../assets/imagenes/gif-de-verdad.gif);
   display: flex;
-  justify-content: center;
-  text-align: center; }
+  justify-content: center; }
   #tit-pag h1 {
     color: white; }
+
+.footer {
+  background-color: #4F2859;
+  color: white; }
+  .footer .footer-heading {
+    color: #6A378C;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.25rem; }
+  .footer .footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 10px; }
+    .footer .footer-link:hover {
+      color: #6A378C; }
+  .footer .map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  .footer .container {
+    padding: 0 15px; }
+  @media (max-width: 768px) {
+    .footer .row {
+      flex-direction: column;
+      text-align: center; }
+    .footer .map-container iframe {
+      height: 200px; } }
+  @media (max-width: 480px) {
+    .footer .row {
+      flex-direction: column;
+      text-align: center; }
+    .footer .map-container iframe {
+      height: 250px; } }
 
 .img-noti {
   width: 100%;
@@ -88,3 +124,108 @@ header {
 
 #gif2 {
   height: 14%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg");
+  background-size: cover;
+  /* Asegura que el GIF cubra todo el fondo */
+  background-position: center;
+  /* Centra el GIF en el fondo */
+  color: white; }
+
+main {
+  padding: 2rem 0;
+  background-image: url("ruta/a/tu/gif.gif"); }
+
+h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem; }
+
+p.lead {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 2rem; }
+
+.contact-form {
+  background-color: #261A23;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+.contact-form .form-control {
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem; }
+
+.contact-form textarea {
+  resize: none;
+  min-height: 150px; }
+
+.btn-violeta {
+  background-color: #6A378C;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s; }
+  .btn-violeta:hover {
+    background-color: #4F2859; }
+
+footer {
+  background-color: #4F2859;
+  color: white; }
+  footer .footer-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; }
+  footer .map-container iframe {
+    border-radius: 8px; }
+  footer h5 {
+    color: #6A378C;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  footer .container {
+    padding: 0 15px; }
+  @media (max-width: 768px) {
+    footer .footer-image {
+      display: none; }
+    footer .map-container iframe {
+      height: 200px; } }
+  @media (max-width: 480px) {
+    footer .row {
+      flex-direction: column;
+      text-align: center; }
+    footer .map-container iframe {
+      height: 250px; } }
+
+#cont-explora-h2-p-img-main {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%; }
+
+.cont-titulo-explora-main {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  border: solid 5px; }
+
+.cont-text-explora-main {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  border: solid 5px; }
+
+.panel {
+  margin-bottom: 20px;
+  /* Espacio entre las cards */ }
