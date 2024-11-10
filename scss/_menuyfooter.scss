@@ -25,6 +25,17 @@ header {
             width: 100%;
             border-radius: 100%;
             border: solid white;
+            transition: 1s;
+            &:hover{
+                rotate: 360deg;
+                @keyframes rotate{
+                    from{
+                        transform: rotate(0deg);
+                    }to{
+                        transform: rotate(7560deg);
+                    }
+                }
+            }
         }
     }
 
@@ -37,6 +48,7 @@ header {
 
         .nav__ul {
             width: 100%;
+            list-style: none;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -59,7 +71,7 @@ header {
 
             &:hover {
                 background-color: $colorvioletaoscuro;
-                width: 18%;
+                
                 background-image: url(../assets/imagenes/gif-de-verdad.gif);
                 
 
@@ -133,8 +145,8 @@ header {
 
 
 footer {
-    background-color: $colorvioletaoscuros;
-    color: $text-color;
+    background-color: $colorvioletaoscuro;
+    
     
   
     .map-container iframe {

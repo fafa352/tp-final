@@ -10,7 +10,7 @@ $text-color: white;
   box-sizing: border-box;
 }
 
-body {
+#contactos {
     font-family: Arial, sans-serif;
     background-image: url('https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg');
     background-size: cover;
@@ -22,19 +22,22 @@ body {
 main {
   padding: 3% 0;
   background-image: url('ruta/a/tu/gif.gif');
+  div{
+    h2 {
+      
+      color: $text-color;
+      margin-bottom: 1%;
+    }
+    p {
+      font-size: 3%;
+      color: $text-color;
+      margin-bottom: 2%;
+    }
+  }
 }
 
-h2 {
-  font-size: 5%;
-  color: $text-color;
-  margin-bottom: 1%;
-}
 
-p.lead {
-  font-size: 3%;
-  color: $text-color;
-  margin-bottom: 2%;
-}
+
 
 
 .contact-form {
