@@ -94,7 +94,8 @@ header {
     font-size: 1.2rem; } }
 
 footer {
-  background-color: #4F2859; }
+  background-color: #4F2859;
+  list-style: none; }
   footer .map-container iframe {
     border-radius: 8px; }
   footer h5 {
@@ -156,6 +157,13 @@ footer {
   .sub:hover {
     text-decoration: underline; }
 
+#registro {
+  font-family: Arial, sans-serif;
+  background-image: url(https://www.fayerwayer.com/resizer/v2/4QTSSOO2LREORNJURVEZSBIXTY.jpg?auth=53e2b4ee041bd22dc59edc7d4e4c0836c31d540db72dc02db9527ddc39bba7f5&width=800&height=534);
+  background-size: cover;
+  background-position: center;
+  color: white; }
+
 * {
   margin: 0;
   padding: 0;
@@ -184,13 +192,13 @@ main {
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
-
-.contact-form .form-control {
-  border-radius: 4px;
-  border: none;
-  margin-bottom: 1.5%;
-  padding: 2%;
-  font-size: 3%; }
+  .contact-form .form-control {
+    border-radius: 4px;
+    color: #261A23;
+    border: none;
+    margin-bottom: 1.5%;
+    padding: 2%;
+    font-size: 90%; }
 
 .contact-form textarea {
   resize: none;
@@ -203,7 +211,7 @@ main {
   border: none;
   border-radius: 4px;
   font-weight: bold;
-  font-size: 5%;
+  font-size: 90%;
   transition: background-color 0.3s; }
   .btn-violeta:hover {
     background-color: #4F2859; }
