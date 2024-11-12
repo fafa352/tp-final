@@ -9,6 +9,9 @@
     justify-content: center;
     display: flex;
     border: solid 5px;
+    h2{
+        color: black;
+    }
 
 
 }
@@ -18,9 +21,22 @@
     justify-content: center;
     display: flex;
     border: solid 5px;
+    .text-explora-main{
+        color: black;
+        font-size: 23px;
+        text-align: center;
+    }
 }
 
 
-.panel {
-    margin-bottom: 20px; /* Espacio entre las cards */
+
+
+
+.imagen-telescopio-card{
+    width: 20%;
+}
+
+.text-card{
+    font-size: 15px;
+    color: black;
 }

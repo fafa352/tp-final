@@ -1,0 +1,80 @@
+$colornegro: #261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+$text-color: white; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#contactos {
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg');
+    background-size: cover;
+    background-position: center ; 
+    color: $text-color;
+  }
+
+
+main {
+  padding: 3% 0;
+  background-image: url('ruta/a/tu/gif.gif');
+  div{
+    h2 {
+      
+      color: $text-color;
+      margin-bottom: 1%;
+    }
+    p {
+      font-size: 3%;
+      color: $text-color;
+      margin-bottom: 2%;
+    }
+  }
+}
+
+
+
+
+
+.contact-form {
+  background-color: $colornegro;
+  padding: 4%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  .form-control {
+    border-radius: 4px;
+    color: $colornegro;
+    border: none;
+    margin-bottom: 1.5%;
+    padding: 2%;
+    font-size: 90%;
+  }
+}
+
+
+
+.contact-form textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+
+.btn-violeta {
+  background-color: $colorvioleta;
+  color: $text-color;
+  padding: 4%;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 90%;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $colorvioletaoscuro;
+  }
+}
+
