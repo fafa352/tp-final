@@ -1,0 +1,93 @@
+.gonzaloimagen {
+  position: absolute;
+  width: 100%;
+  background-position: center;
+  z-index: -1; 
+}
+.todo{
+    width: 100%;
+    height: 300px;
+}
+.cuadrados-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.cuadrado1 {
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-top: 5%;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover { 
+            color: rgb(60, 9, 9);
+            text-decoration: underline; 
+        }
+    
+}
+.cuadradolado {
+    @extend .cuadrado1;
+    background-color: rgba(255, 255, 255, 0.7); ;
+}
+
+
+$border-radius: 8px;
+$shadow-color: rgba(0, 0, 0, 0.1); 
+
+
+.cuadrado {
+  background-color: #f8f9fa;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px $shadow-color;
+  padding: 5px;
+  margin-left: 2%;
+  margin-top: 9%;
+  .row {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; 
+
+    
+  
+    .para {
+      padding: 10px;
+    }
+  }
+}
+
+.izquierda {
+  order: 0; 
+}
+
+.derecha {
+  order: 1; 
+}
+
+.invertido {
+  .row {
+    flex-direction: row-reverse; 
+  }
+  .izquierda {
+    order: 1;
+  }
+  .derecha {
+    order: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cuadrado {
+    .row {
+      flex-direction: column;
+    }
+  }
+}
