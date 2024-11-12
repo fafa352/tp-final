@@ -226,9 +226,14 @@ main {
   justify-content: center;
   display: flex;
   border: solid 5px; }
-  .cont-text-explora-main p {
-    color: black; }
+  .cont-text-explora-main .text-explora-main {
+    color: black;
+    font-size: 23px;
+    text-align: center; }
 
-.panel {
-  margin-bottom: 20px;
-  /* Espacio entre las cards */ }
+.imagen-telescopio-card {
+  width: 20%; }
+
+.text-card {
+  font-size: 15px;
+  color: black; }
