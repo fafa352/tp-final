@@ -3,7 +3,8 @@ $colorvioletaoscuro: #4F2859;
 $colorvioleta: #6A378C;
 $colorcyan: #067373;
 $colormarron: #593936;
-$text-color: white; 
+$color-texto: white; 
+
 * {
   margin: 0;
   padding: 0;
@@ -15,24 +16,23 @@ $text-color: white;
     background-image: url('https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg');
     background-size: cover;
     background-position: center ; 
-    color: $text-color;
+    color: $color-texto;
   }
 
 
 main {
   padding: 3% 0;
-  background-image: url('ruta/a/tu/gif.gif');
+  color: white;
   div{
-    h2 {
-      
-      color: $text-color;
+    h1{
+      color: $color-texto;
       margin-bottom: 1%;
     }
-    p {
-      font-size: 3%;
-      color: $text-color;
-      margin-bottom: 2%;
-    }
+    p{
+        font-size: 3%;
+        color: $color-texto;
+        margin-bottom: 2%;
+      }
   }
 }
 
@@ -47,7 +47,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   .form-control {
     border-radius: 4px;
-    color: $colornegro;
+    color: $color-texto;
     border: none;
     margin-bottom: 1.5%;
     padding: 2%;
@@ -65,7 +65,7 @@ main {
 
 .btn-violeta {
   background-color: $colorvioleta;
-  color: $text-color;
+  color: $color-texto;
   padding: 4%;
   border: none;
   border-radius: 4px;
@@ -78,3 +78,98 @@ main {
   }
 }
 
+
+
+.pagina-inicio {
+    background: url('https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg') no-repeat center center/cover;
+}
+.caja-login {
+
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: $colornegro  !important;
+
+  @media (min-width: 576px) {
+      width: 80%;
+  }
+
+  @media (min-width: 768px) {
+      width: 70%;
+  }
+
+  @media (min-width: 992px) {
+      width: 60%;
+  }
+
+  @media (min-width: 1200px) {
+      width: 50%;
+  }
+}
+
+.titulo {
+  font-size: xx-large; 
+  margin-bottom: 5%;
+  color: $color-texto;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.etiqueta {
+  display: block;
+  margin-bottom: 2.5%;
+  color: $color-texto;
+}
+
+.entrada {
+  width: 100%;
+  padding: 2.5%;
+  border: 1px solid $color-texto;
+  border-radius: 5px;
+}
+
+.checkbox {
+  margin-right: 2.5%;
+}
+
+.boton {
+  background-color: $colorvioleta;
+  color: $color-texto;
+  padding: 2.5% 5%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+
+  &:hover {
+      background-color: darken($colorvioletaoscuro, 10%);
+  }
+}
+
+.registro {
+  margin-top: 5%;
+  color: $colorvioleta;
+}
+
+.enlace {
+  color: rgb(117, 85, 117);
+  text-decoration: none;
+
+  &:hover {
+      text-decoration: underline;
+  }
+}

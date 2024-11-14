@@ -128,8 +128,15 @@ footer {
   justify-content: flex-start; }
   .tex h2 {
     font-size: 33px; }
+  .tex #noti3 {
+    margin-top: 5%; }
+  .tex #noti4 {
+    margin-top: 12%; }
+  .tex #noti5 {
+    margin-top: 14%; }
   .tex #noti6 {
-    padding: 1% 0 0 0; }
+    padding: 1% 0 0 0;
+    margin-top: 14%; }
 
 #gif {
   width: 100%;
@@ -165,6 +172,22 @@ footer {
   color: white; }
   #registro .bot- {
     margin: 0 0 1% 0; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #desaparecer {
+    width: 0%; }
+  .img-noti {
+    width: 0%; } }
+
+@media screen and (min-width: 908px) and (max-width: 991px) {
+  #desaparecer {
+    width: 0%; }
+  .tex h2 {
+    font-size: xx-large; } }
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  .tex h2 {
+    font-size: large; } }
 
 .gonzaloimagen {
   position: absolute;
@@ -246,8 +269,8 @@ footer {
 
 main {
   padding: 3% 0;
-  background-image: url("ruta/a/tu/gif.gif"); }
-  main div h2 {
+  color: white; }
+  main div h1 {
     color: white;
     margin-bottom: 1%; }
   main div p {
@@ -262,7 +285,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
   .contact-form .form-control {
     border-radius: 4px;
-    color: #261A23;
+    color: white;
     border: none;
     margin-bottom: 1.5%;
     padding: 2%;
@@ -283,6 +306,81 @@ main {
   transition: background-color 0.3s; }
   .btn-violeta:hover {
     background-color: #4F2859; }
+
+.pagina-inicio {
+  background: url("https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg") no-repeat center center/cover; }
+
+.caja-login {
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #261A23 !important; }
+  @media (min-width: 576px) {
+    .caja-login {
+      width: 80%; } }
+  @media (min-width: 768px) {
+    .caja-login {
+      width: 70%; } }
+  @media (min-width: 992px) {
+    .caja-login {
+      width: 60%; } }
+  @media (min-width: 1200px) {
+    .caja-login {
+      width: 50%; } }
+
+.titulo {
+  font-size: xx-large;
+  margin-bottom: 5%;
+  color: white; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form-group {
+  margin-bottom: 5%;
+  width: 100%; }
+
+.etiqueta {
+  display: block;
+  margin-bottom: 2.5%;
+  color: white; }
+
+.entrada {
+  width: 100%;
+  padding: 2.5%;
+  border: 1px solid white;
+  border-radius: 5px; }
+
+.checkbox {
+  margin-right: 2.5%; }
+
+.boton {
+  background-color: #6A378C;
+  color: white;
+  padding: 2.5% 5%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; }
+  .boton:hover {
+    background-color: #301836; }
+
+.registro {
+  margin-top: 5%;
+  color: #6A378C; }
+
+.enlace {
+  color: #755575;
+  text-decoration: none; }
+  .enlace:hover {
+    text-decoration: underline; }
 
 #cont-explora-h2-p-img-main {
   margin-left: 15%;
