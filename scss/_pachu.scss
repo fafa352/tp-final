@@ -4,30 +4,37 @@
 }
 
 body{
-    background-color: #5549ff;
-
+    background-color: #067882;
 }
 
-#titulo1{
+#div-titulo1{
     justify-content: center;
     margin-top: 1%;
     margin-left: 27%;
     margin-right: 10%;
-    background-color: #2783fa;
+    background-color: rgb(6, 100, 100);
     color: black;
     border-radius: 25px;
     width: 550px;
     height: 50px;
     transition: width 2s, height 2s;
     }
-    #titulo1:hover{
+    #div-titulo1:hover{
         color: white;
         width: 575px;
         height: 60px;
-        background-color: rgb(6, 132, 250);
+        background-color: rgb(6, 140, 150);
 }
 
-h2{
+#titulo1{
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 10%;
+}
+
+#divtitulo2{
+    font-size: 20%;
     margin-left: 13%;
     margin-right: 15%;
     justify-content: center;
@@ -35,7 +42,7 @@ h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h3{
+#div-titulo3{
     margin-top: 3%;
     justify-content: center;
     margin-left: 13%;
@@ -43,7 +50,15 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h4{
+#titulo3{
+    margin-top: 3%;
+    justify-content: center;
+    margin-left: 26%;
+    margin-right: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div-titulo4{
     font-size: 40px;
     margin-top: 3%;
     justify-content: center;
@@ -61,7 +76,15 @@ h4{
     }
 }
 
-h5{
+#titulo4{
+    font-size: 40px;
+    margin-top: 3%;
+    justify-content: center;
+    margin-left: 28%;
+    margin-right: 25%;
+}
+
+#div-titulo5{
     font-size: 30px;
     margin-top: 3%;
     justify-content: center;
@@ -71,7 +94,7 @@ h5{
 
 }
 
-h6{
+#div-titulo6{
     font-size: 30px;
     margin-top: 3%;
     justify-content: center;
@@ -107,11 +130,11 @@ h6{
 
 .cont-fotos1{
     @include medidasFotos(350px, 400px);
-    border: solid 8px rgb(0, 110, 255);
+    border: solid 8px rgb(6, 140, 150);
 }
 
 .cont-fotos2{
     @include medidasFotos(350px, 400px);
-    border: solid 10px rgb(0, 110, 255);
+    border: solid 10px rgb(6, 140, 150);
 }
 
