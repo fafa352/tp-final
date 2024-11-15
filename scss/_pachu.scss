@@ -71,6 +71,17 @@ h5{
 
 }
 
+h6{
+    font-size: 30px;
+    margin-top: 3%;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 25%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ 
+}
+
+
 .section-img-galaxia{
     margin-top: 3%;
     justify-content: center;
@@ -94,8 +105,13 @@ h5{
 }
 
 
-.cont-fotos{
+.cont-fotos1{
     @include medidasFotos(350px, 400px);
     border: solid 8px rgb(0, 110, 255);
+}
+
+.cont-fotos2{
+    @include medidasFotos(350px, 400px);
+    border: solid 10px rgb(0, 110, 255);
 }
 
