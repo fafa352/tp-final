@@ -31,7 +31,18 @@ body{
     margin-top: 1%;
     margin-left: 40%;
     margin-right: 10%;
+    animation: aparecer 4s 5;
 }
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        color: white;
+    }
+}
+
 
 #divtitulo2{
     font-size: 20%;
