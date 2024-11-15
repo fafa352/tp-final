@@ -394,7 +394,7 @@ h4 {
   justify-content: center;
   margin-left: 40%;
   margin-right: 1%;
-  animation: aparecer 4s 2; }
+  animation: aparecer 4s 5; }
 
 @keyframes aparecer {
   from {
