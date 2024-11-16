@@ -150,18 +150,12 @@ footer {
     
     
   
-    .map-container iframe {
-      border-radius: 8px; 
+    .footer__map-container iframe {
+      border-radius: 10px; 
     }
   
-    
-    h5 {
-      color: $colorvioleta; 
-      font-weight: bold; 
-      margin-bottom: 15px;
-    }
   
-    .container {
+    .footer__container {
       padding: 0 15px;
     }
   
@@ -171,7 +165,7 @@ footer {
         display: none; 
       }
   
-      .map-container iframe {
+      .footer__map-container iframe {
         height: 200px; 
       }
     }
@@ -182,10 +176,8 @@ footer {
         text-align: center;
       }
   
-      .map-container iframe {
+      .footer__map-container iframe {
         height: 250px;
       }
     }
   }
-  
-  

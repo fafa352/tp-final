@@ -10,17 +10,18 @@ $color-texto: white;
   padding: 0;
   box-sizing: border-box;
 }
-
-#contactos {
+//----------------------------------------------contactos
+.pagina-inicio {
     font-family: Arial, sans-serif;
-    background-image: url('https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg');
+    background-image: url(../assets/imagenes/patata.jpg);
     background-size: cover;
     background-position: center ; 
-    color: $color-texto;
+
+
   }
 
 
-main {
+.container__contactos main {
   padding: 3% 0;
   color: white;
   div{
@@ -29,7 +30,7 @@ main {
       margin-bottom: 1%;
     }
     p{
-        font-size: 3%;
+        font-size: xx-large;
         color: $color-texto;
         margin-bottom: 2%;
       }
@@ -37,54 +38,45 @@ main {
 }
 
 
-
-
-
-.contact-form {
+.formulario__contactos {
   background-color: $colornegro;
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  .form-control {
+  color: black;
+  .formulario__contactos__control{
     border-radius: 4px;
-    color: $color-texto;
+    color: black;
     border: none;
     margin-bottom: 1.5%;
     padding: 2%;
     font-size: 90%;
+    
   }
-}
 
-
-
-.contact-form textarea {
-  resize: none;
-  min-height: 150px;
 }
 
 
 .btn-violeta {
   background-color: $colorvioleta;
   color: $color-texto;
-  padding: 4%;
+  padding: 4% 5% 6% 7%;
   border: none;
   border-radius: 4px;
   font-weight: bold;
   font-size: 90%;
   transition: background-color 0.3s;
+  margin-bottom: 5%;
 
   &:hover {
     background-color: $colorvioletaoscuro;
   }
 }
 
+//----------------------------------------------------------inicio sesion
 
-
-.pagina-inicio {
-    background: url('https://cdn.pixabay.com/photo/2017/08/10/00/40/stars-2616537_1280.jpg') no-repeat center center/cover;
-}
 .caja-login {
-
+  color: $color-texto;
   padding: 2%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -131,7 +123,7 @@ main {
 .etiqueta {
   display: block;
   margin-bottom: 2.5%;
-  color: $color-texto;
+  color: $colornegro;
 }
 
 .entrada {
@@ -172,4 +164,18 @@ main {
   &:hover {
       text-decoration: underline;
   }
+}
+
+
+.hola{
+  margin-bottom: 5%;
+}
+
+
+.formulario__contactos__titulo{
+  color: white;
+}
+
+.formulario__contactos__subtitulo{
+  color: white;
 }

@@ -18,36 +18,6 @@
 
 </head>
 <body class="pagina-inicio">
-    <header>
-        <div id="cont-imagen-menu">
-            <img src="../assets/imagenes/logo.png" alt="Logo de Ameri" id="foto-menu">
-        </div>
-        <nav id="cont-menu" role="navigation">
-            <ul class="nav__ul">
-                <li class="li-cont-submenus-menu"><a href="">Astroturismo</a>
-                    <ul class="ul-cont-submenus">
-                        <li class="li-submenus-menu"><a href="">Agenda</a></li>
-                        <li class="li-submenus-menu"><a href="">Cuerpos Celestes</a></li>
-                        <li class="li-submenus-menu"><a href="">Galaxia y Agujero Negro</a></li>
-                    </ul>
-                </li>
-                <li class="li-cont-submenus-menu"><a href="">Introducción a Ameri</a>
-                    <ul class="ul-cont-submenus">
-                        <li class="li-submenus-menu"><a href="">Preguntas</a></li>
-                        <li class="li-submenus-menu"><a href="">Galería</a></li>
-                    </ul>
-                </li>
-                <li class="li-cont-submenus-menu"><a href="">Astronoticias</a></li>
-                <li class="li-cont-submenus-menu"><a href="">Estudiar</a></li>
-                <li class="li-cont-submenus-menu"><a href="">Contacto</a>
-                    <ul class="ul-cont-submenus">
-                        <li class="li-submenus-menu"><a href="">Registro</a></li>
-                        <li class="li-submenus-menu"><a href="">Suscripción</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main class="d-flex justify-content-center align-items-center vh-100">
         <section class="caja-login bg-light p-4 rounded shadow" aria-labelledby="inicio-sesion">
             <h1 id="inicio-sesion" class="titulo text-center mb-4">Iniciar Sesión</h1>
@@ -68,42 +38,43 @@
                     <input type="checkbox" id="no-robot" class="form-check-input checkbox" required>
                     <label for="no-robot" class="form-check-label etiqueta">No soy un robot</label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block boton">Iniciar Sesión</button>
+                <a href="astronoticias.html" class="btn btn-primary btn-block boton">Iniciar Sesión</a>
             </form>
             <p class="text-center mt-3 registro">¿Nuevo aquí? <a href="../paginas/registro.html" class="enlace">Regístrate</a></p>
         </section>
     </main>
 
-    <footer class="footer bg-dark text-light py-5">
-        <div class="container">
+    <footer class="footer footer--dark bg-dark text-light py-5">
+        <div class="container footer__container">
             <div class="row">
-                <section class="col-12 col-md-4 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Contacto</h2>
-                    <ul class="list-unstyled">
-                        <li><strong>Teléfono:</strong> +123 456 789</li>
-                        <li><strong>Email:</strong> Ameri@gmail.com</li>
-                        <li><strong>Dirección:</strong> Calle 123</li>
-                        <li><strong>Horario:</strong> Lunes - Viernes: 9 AM - 6 PM</li>
+                <section class="footer__section footer__section--contact col-12 col-md-4 mb-4 mb-md-0">
+                    <h2 class="footer__heading footer__heading--contact">Contacto</h2>
+                    <ul class="footer__list footer__list--contact list-unstyled">
+                        <li class="footer__list-item"><strong>Teléfono:</strong> +123 456 789</li>
+                        <li class="footer__list-item"><strong>Email:</strong> Ameri@gmail.com</li>
+                        <li class="footer__list-item"><strong>Dirección:</strong> Calle 123</li>
+                        <li class="footer__list-item"><strong>Horario:</strong> Lunes - Viernes: 9 AM - 6 PM</li>
                     </ul>
                 </section>
-                <section class="col-12 col-md-4 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Ubicación</h2>
-                    <div class="map-container">
+                <section class="footer__section footer__section--location col-12 col-md-4 mb-4 mb-md-0">
+                    <h2 class="footer__heading footer__heading--location">Ubicación</h2>
+                    <div class="footer__map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13141.452659976892!2d-58.4116258!3d-34.5696763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1731529419456!5m2!1ses-419!2sar" 
                             width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </section>
-                <section class="col-12 col-md-4 mb-4 mb-md-0">
-                    <h2 class="footer-heading">Enlaces Rápidos</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#" class="footer-link">Servicios</a></li>
-                        <li><a href="#" class="footer-link">Contactos</a></li>
-                        <li><a href="#" class="footer-link">Política de privacidad</a></li>
+                <section class="footer__section footer__section--links col-12 col-md-4 mb-4 mb-md-0">
+                    <h2 class="footer__heading footer__heading--links">Enlaces Rápidos</h2>
+                    <ul class="footer__list footer__list--links list-unstyled">
+                        <li class="footer__list-item"><a href="astronoticias.html" class="footer__link footer__link--home">Home</a></li>
+                        <li class="footer__list-item"><a href="introduccionalaastronomia.html" class="footer__link footer__link--intro">Introducción a la Astronomía</a></li>
+                        <li class="footer__list-item"><a href="contactos.html" class="footer__link footer__link--contact">Contactos</a></li>
+                        <li class="footer__list-item"><a href="registro.html" class="footer__link footer__link--register">Regístrate</a></li>
+                        <li class="footer__list-item"><a href="registro.html" class="footer__link footer__link--login">Inicia sesión</a></li>
                     </ul>
                 </section>
             </div>
-            <div class="text-center mt-4">
+            <div class="footer__copyright text-center mt-4">
                 <p>&copy; 2024 Ameri. Todos los derechos reservados.</p>
             </div>
         </div>
