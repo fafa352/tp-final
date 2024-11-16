@@ -511,10 +511,10 @@ body {
   height: 400px;
   width: 350px;
   border: solid 10px #068c96;
-  transition: transform 0.2s ease; }
+  transition: transform 0.1s ease; }
 
 .cont-fotos2:hover {
-  transform: scale(1.1); }
+  transform: scale(0.8); }
 
 #cont-explora-h2-p-img-main {
   margin-left: 15%;

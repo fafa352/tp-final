@@ -199,10 +199,10 @@ body{
 .cont-fotos2{
     @include medidasFotos(350px, 400px);
     border: solid 10px rgb(6, 140, 150);
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
 }
 
 
 .cont-fotos2:hover{
-    transform: scale(1.1);
+    transform: scale(0.8);
 }
