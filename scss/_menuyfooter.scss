@@ -67,17 +67,17 @@ header{
         .li-cont-submenus-menu {
             position: relative;
             font-size: 22px;
-            text-align: center;
 
             &:hover {
-                background-color: $colorvioletaoscuro;
+                background-color: $colorvioleta;
+                box-shadow: 0 0 7px 1px $colorvioleta;
                 
-                background-image: url(../assets/imagenes/gif-de-verdad.gif);
                 
 
                 .ul-cont-submenus {
                     display: block;
-                    background-color: $colorvioletaoscuro;
+                    background-color: $colorvioleta;
+                    box-shadow: 0 0 7px 1px $colorvioleta;
                     width: 100%;
                 }
             }

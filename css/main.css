@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-image: url(../assets/imagenes/gif-de-verdad.gif); }
+
 header {
   width: 100%;
   background-image: url(../assets/imagenes/gif-de-verdad.gif);
@@ -47,14 +50,14 @@ header {
         display: block; }
     header #cont-menu .li-cont-submenus-menu {
       position: relative;
-      font-size: 22px;
-      text-align: center; }
+      font-size: 22px; }
       header #cont-menu .li-cont-submenus-menu:hover {
-        background-color: #4F2859;
-        background-image: url(../assets/imagenes/gif-de-verdad.gif); }
+        background-color: #6A378C;
+        box-shadow: 0 0 7px 1px #6A378C; }
         header #cont-menu .li-cont-submenus-menu:hover .ul-cont-submenus {
           display: block;
-          background-color: #4F2859;
+          background-color: #6A378C;
+          box-shadow: 0 0 7px 1px #6A378C;
           width: 100%; }
       header #cont-menu .li-cont-submenus-menu a {
         color: white;
@@ -353,9 +356,6 @@ a {
 
 .formulario__contactos__subtitulo {
   color: white; }
-
-body {
-  background-color: #067882; }
 
 #div-titulo1 {
   justify-content: center;
