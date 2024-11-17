@@ -96,24 +96,45 @@ header {
   #tit-pag h1 {
     font-size: 1.2rem; } }
 
-footer {
-  background-color: #4F2859;
-  list-style: none; }
-  footer .footer__map-container iframe {
-    border-radius: 10px; }
-  footer .footer__container {
-    padding: 0 15px; }
-  @media (max-width: 768px) {
-    footer .footer-image {
-      display: none; }
-    footer .footer__map-container iframe {
-      height: 200px; } }
-  @media (max-width: 480px) {
-    footer .row {
-      flex-direction: column;
-      text-align: center; }
-    footer .footer__map-container iframe {
-      height: 250px; } }
+.footer {
+  background-color: #161014;
+  color: white;
+  padding: 2rem 0; }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem; }
+    @media (max-width: 768px) {
+      .footer__container {
+        flex-direction: column; } }
+  .footer__section {
+    flex: 1; }
+    .footer__section--map iframe {
+      border: none;
+      border-radius: 8px; }
+  .footer__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4F2859;
+    display: inline-block; }
+  .footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footer__list .footer__link {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      display: block; }
+      .footer__list .footer__link:hover {
+        color: #6A378C; }
+  .footer__bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    border-top: 1px solid;
+    padding-top: 1rem; }
 
 .img-noti {
   width: 100%;
@@ -237,23 +258,25 @@ a {
   background-size: cover;
   background-position: center; }
 
-.container__contactos main {
+.container__contactos {
   padding: 3% 0;
   color: white; }
-  .container__contactos main div h1 {
+  .container__contactos .formulario__contactos__encabezado .formulario__contactos__titulo {
     color: white;
     margin-bottom: 1%; }
-  .container__contactos main div p {
-    font-size: xx-large;
+  .container__contactos .formulario__contactos__encabezado .formulario__contactos__subtitulo {
+    font-size: x-large;
     color: white;
     margin-bottom: 2%; }
+  .container__contactos .container__formulario {
+    margin-bottom: 5%; }
 
 .formulario__contactos {
   background-color: #261A23;
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: black; }
+  color: white; }
   .formulario__contactos .formulario__contactos__control {
     border-radius: 4px;
     color: black;
@@ -265,13 +288,16 @@ a {
 .btn-violeta {
   background-color: #6A378C;
   color: white;
-  padding: 4% 5% 6% 7%;
+  padding: 4% 7%;
   border: none;
   border-radius: 4px;
   font-weight: bold;
   font-size: 90%;
+  text-align: center;
+  display: inline-block;
   transition: background-color 0.3s;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  cursor: pointer; }
   .btn-violeta:hover {
     background-color: #4F2859; }
 
@@ -308,25 +334,27 @@ a {
   flex-direction: column;
   align-items: center; }
 
-.form-group {
+.formulario__grupo {
   margin-bottom: 5%;
   width: 100%; }
 
-.etiqueta {
-  display: block;
-  margin-bottom: 2.5%;
-  color: #261A23; }
+.formulario__etiqueta {
+  display: inline-block;
+  color: white; }
 
-.entrada {
+.formulario__entrada {
   width: 100%;
   padding: 2.5%;
-  border: 1px solid white;
-  border-radius: 5px; }
+  border: 1px solid #261A23;
+  border-radius: 5px;
+  color: #261A23; }
 
-.checkbox {
+.formulario__grupo--checkbox {
+  display: flex;
+  align-items: center;
   margin-right: 2.5%; }
 
-.boton {
+.formulario__boton--iniciar-sesion {
   background-color: #6A378C;
   color: white;
   padding: 2.5% 5%;
@@ -335,27 +363,18 @@ a {
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%; }
-  .boton:hover {
+  .formulario__boton--iniciar-sesion:hover {
     background-color: #301836; }
 
-.registro {
+.formulario__registro {
   margin-top: 5%;
   color: #6A378C; }
 
-.enlace {
+.formulario__enlace {
   color: #755575;
   text-decoration: none; }
-  .enlace:hover {
+  .formulario__enlace:hover {
     text-decoration: underline; }
-
-.hola {
-  margin-bottom: 5%; }
-
-.formulario__contactos__titulo {
-  color: white; }
-
-.formulario__contactos__subtitulo {
-  color: white; }
 
 #div-titulo1 {
   justify-content: center;
