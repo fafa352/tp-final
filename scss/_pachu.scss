@@ -1,3 +1,13 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: #067882;
+}
+
+
 #div-titulo1{
     justify-content: center;
     margin-top: 1%;
@@ -197,3 +207,90 @@
 .cont-fotos2:hover{
     transform: scale(0.8);
 }
+
+#video-tamano{
+    margin-left: 22%;
+    width: 710px;
+    height: 450px;
+}
+
+#pasos-video{
+    justify-content: center;
+    margin-right: 100%;
+    animation: aparecer 4s 5;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        color: white;
+    }
+}
+
+#titulo1-pag2{
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 44%;
+    margin-right: 10%;
+    animation: aparecer 4s 5;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        color: white;
+    }
+}
+
+#titulo4-pag2{
+    font-size: 40px;
+    margin-top: 3%;
+    justify-content: center;
+    margin-left: 26%;
+    margin-right: 25%;
+    transition: transform 0.3s ease;
+}
+
+#titulo4-pag2:hover{
+    transform: scale(1.2);
+}
+
+#titulo1-pag3{
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 27%;
+    margin-right: 10%;
+    animation: aparecer 4s 5;
+    transition: transform 0.3s ease;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        color: white;
+    }
+}
+
+#titulo1-pag3:hover{
+    transform: scale(1.1);
+}
+
+#accordionFlushExample{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#letra-color-pag3{
+    color: #067373;
+}
+
