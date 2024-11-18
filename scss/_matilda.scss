@@ -5,37 +5,40 @@
 }
 //----------------------------------------------contactos
 .pagina-inicio {
-    font-family: Arial, sans-serif;
-    background-image: url(../assets/imagenes/patata.jpg);
-    background-size: cover;
-    background-position: center ; 
-
-
-  }
-
-
-.container__contactos main {
-  padding: 3% 0;
-  color: white;
-  div{
-    h1{
-      color: $color-texto;
-      margin-bottom: 1%;
-    }
-    p{
-        font-size: xx-large;
-        color: $color-texto;
-        margin-bottom: 2%;
-      }
-  }
+  font-family: Arial, sans-serif;
+  background-image: url(../assets/imagenes/patata.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
+.container__contactos {
+  padding: 3% 0;
+  color: white;
+  
+  .formulario__contactos__encabezado {
+    .formulario__contactos__titulo {
+      color: white;
+      margin-bottom: 1%;
+    }
+
+    .formulario__contactos__subtitulo {
+      font-size: x-large;
+      color: $color-texto;
+      margin-bottom: 2%;
+    }
+  }
+
+  .container__formulario {
+    margin-bottom: 5%; 
+  }
+}
 
 .formulario__contactos {
   background-color: $colornegro;
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
   .formulario__contactos__control{
     border-radius: 4px;
     color: black;
@@ -43,27 +46,30 @@
     margin-bottom: 1.5%;
     padding: 2%;
     font-size: 90%;
-    
   }
-
 }
-
 
 .btn-violeta {
   background-color: $colorvioleta;
   color: $color-texto;
-  padding: 4% 5% 6% 7%;
+  padding: 4% 7%; 
   border: none;
   border-radius: 4px;
   font-weight: bold;
   font-size: 90%;
+  text-align: center; 
+  display: inline-block; 
   transition: background-color 0.3s;
   margin-bottom: 5%;
+  cursor: pointer; 
 
   &:hover {
     background-color: $colorvioletaoscuro;
   }
 }
+
+
+
 
 //----------------------------------------------------------inicio sesion
 
@@ -76,7 +82,7 @@
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
-  background-color: $colornegro  !important;
+  background-color: $colornegro !important;
 
   @media (min-width: 576px) {
       width: 80%;
@@ -105,31 +111,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 }
 
-.form-group {
+.formulario__grupo {
   margin-bottom: 5%;
   width: 100%;
 }
 
-.etiqueta {
-  display: block;
-  margin-bottom: 2.5%;
-  color: $colornegro;
+.formulario__etiqueta{
+  display: inline-block;
+  color: $color-texto;
 }
 
-.entrada {
+.formulario__entrada {
   width: 100%;
   padding: 2.5%;
-  border: 1px solid $color-texto;
+  border: 1px solid $colornegro;
   border-radius: 5px;
+  color: #261A23;
 }
 
-.checkbox {
+.formulario__grupo--checkbox {
+  display: flex;
+  align-items: center;
   margin-right: 2.5%;
 }
 
-.boton {
+.formulario__boton--iniciar-sesion {
   background-color: $colorvioleta;
   color: $color-texto;
   padding: 2.5% 5%;
@@ -144,12 +154,12 @@
   }
 }
 
-.registro {
+.formulario__registro {
   margin-top: 5%;
   color: $colorvioleta;
 }
 
-.enlace {
+.formulario__enlace {
   color: rgb(117, 85, 117);
   text-decoration: none;
 
@@ -159,15 +169,3 @@
 }
 
 
-.hola{
-  margin-bottom: 5%;
-}
-
-
-.formulario__contactos__titulo{
-  color: white;
-}
-
-.formulario__contactos__subtitulo{
-  color: white;
-}
