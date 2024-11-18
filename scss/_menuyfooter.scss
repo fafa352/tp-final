@@ -3,10 +3,16 @@ $colorvioletaoscuro: #4F2859;
 $colorvioleta: #6A378C;
 $colorcyan: #067373;
 $colormarron: #593936;
+$color-texto: white;
+$color-footer: #161014;
 
 header{
     width: 100%;
-    background-image: url(../assets/imagenes/gif-de-verdad.gif);
+    background-image: url(../assets/imagenes/menu.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 2px black;
+    background-position: 50% 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +34,7 @@ header{
             transition: 1s;
             &:hover{
                 rotate: 360deg;
+                filter: opacity(50%);
                 @keyframes rotate{
                     from{
                         transform: rotate(0deg);
@@ -57,7 +64,10 @@ header{
         .ul-cont-submenus {
             position: absolute;
             display: none;
-
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+            width: 100%;
 
             li {
                 display: block;
@@ -66,18 +76,18 @@ header{
 
         .li-cont-submenus-menu {
             position: relative;
-            font-size: 22px;
-            text-align: center;
+            font-size: 20px;
 
             &:hover {
-                background-color: $colorvioletaoscuro;
+                background-color: $colornegro;
+                box-shadow: 0 0 7px 1px $text-color;
                 
-                background-image: url(../assets/imagenes/gif-de-verdad.gif);
                 
 
                 .ul-cont-submenus {
                     display: block;
-                    background-color: $colorvioletaoscuro;
+                    background-color: $colornegro;
+                    box-shadow: 0 0 7px 1px $text-color;
                     width: 100%;
                 }
             }
@@ -85,8 +95,8 @@ header{
             a {
                 color: white;
                 text-decoration: none;
-                font-weight: 1000;
-                font-size: 20;
+                font-weight: 1000px;
+                font-size: 20px;
             }
         }
     }
@@ -143,49 +153,62 @@ header{
     }
 }
 
-
-footer {
-    background-color: $colorvioletaoscuro;
-    list-style: none;
-    
-    
+.footer {
+    background-color: $color-footer ;
+    color: $color-texto;
+    padding: 2rem 0;
   
-    .map-container iframe {
-      border-radius: 8px; 
-    }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
   
-    
-    h5 {
-      color: $colorvioleta; 
-      font-weight: bold; 
-      margin-bottom: 15px;
-    }
-  
-    .container {
-      padding: 0 15px;
-    }
-  
-  
-    @media (max-width: 768px) {
-      .footer-image {
-        display: none; 
-      }
-  
-      .map-container iframe {
-        height: 200px; 
+      @media (max-width: 768px) {
+        flex-direction: column;
       }
     }
-    
-    @media (max-width: 480px) {
-      .row {
-        flex-direction: column; 
-        text-align: center;
-      }
   
-      .map-container iframe {
-        height: 250px;
+    &__section {
+      flex: 1;
+  
+      &--map {
+        iframe {
+          border: none;
+          border-radius: 8px;
+        }
       }
+    }
+  
+    &__title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid $colorvioletaoscuro;
+      display: inline-block;
+    }
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      .footer__link {
+        color: $color-texto;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        display: block;
+  
+        &:hover {
+          color: $colorvioleta;
+        }
+      }
+    }
+  
+    &__bottom {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      border-top: 1px solid;
+      padding-top: 1rem;
     }
   }
-  
-  
