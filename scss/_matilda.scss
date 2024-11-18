@@ -1,10 +1,3 @@
-$colornegro: #261A23;
-$colorvioletaoscuro: #4F2859;
-$colorvioleta: #6A378C;
-$colorcyan: #067373;
-$colormarron: #593936;
-$color-texto: white; 
-
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +36,6 @@ $color-texto: white;
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: black;
   .formulario__contactos__control{
     border-radius: 4px;
     color: black;

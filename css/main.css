@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0; }
 
-body {
+.main-fondo {
   background-image: url(../assets/imagenes/gif-de-verdad.gif); }
 
 header {
   width: 100%;
-  background-image: url(../assets/imagenes/gif-de-verdad.gif);
+  background-image: url(../assets/imagenes/menu.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: solid 2px black;
+  background-position: 50% 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +28,8 @@ header {
       border: solid white;
       transition: 1s; }
       header #cont-imagen-menu #foto-menu:hover {
-        rotate: 360deg; }
+        rotate: 360deg;
+        filter: opacity(50%); }
 
 @keyframes rotate {
   from {
@@ -45,25 +50,29 @@ header {
       align-items: center; }
     header #cont-menu .ul-cont-submenus {
       position: absolute;
-      display: none; }
+      display: none;
+      margin: 0 !important;
+      padding: 0 !important;
+      text-align: center;
+      width: 100%; }
       header #cont-menu .ul-cont-submenus li {
         display: block; }
     header #cont-menu .li-cont-submenus-menu {
       position: relative;
-      font-size: 22px; }
+      font-size: 20px; }
       header #cont-menu .li-cont-submenus-menu:hover {
-        background-color: #6A378C;
-        box-shadow: 0 0 7px 1px #6A378C; }
+        background-color: #261A23;
+        box-shadow: 0 0 7px 1px white; }
         header #cont-menu .li-cont-submenus-menu:hover .ul-cont-submenus {
           display: block;
-          background-color: #6A378C;
-          box-shadow: 0 0 7px 1px #6A378C;
+          background-color: #261A23;
+          box-shadow: 0 0 7px 1px white;
           width: 100%; }
       header #cont-menu .li-cont-submenus-menu a {
         color: white;
         text-decoration: none;
-        font-weight: 1000;
-        font-size: 20; }
+        font-weight: 1000px;
+        font-size: 20px; }
   header #tit-pag {
     margin-top: 5%;
     display: flex;
@@ -114,6 +123,9 @@ footer {
       text-align: center; }
     footer .footer__map-container iframe {
       height: 250px; } }
+
+#astro-noti {
+  padding-top: 10%; }
 
 .img-noti {
   width: 100%;
@@ -170,7 +182,7 @@ a {
 
 #registro {
   font-family: Arial, sans-serif;
-  background-image: url(https://www.fayerwayer.com/resizer/v2/4QTSSOO2LREORNJURVEZSBIXTY.jpg?auth=53e2b4ee041bd22dc59edc7d4e4c0836c31d540db72dc02db9527ddc39bba7f5&width=800&height=534);
+  background-image: url(../assets/imagenes/patata.jpg);
   background-size: cover;
   background-position: center;
   color: white; }
@@ -252,8 +264,7 @@ a {
   background-color: #261A23;
   padding: 4%;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: black; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
   .formulario__contactos .formulario__contactos__control {
     border-radius: 4px;
     color: black;
@@ -519,8 +530,7 @@ a {
 
 #cont-explora-h2-p-img-main {
   margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 10%; }
+  margin-right: 15%; }
 
 .cont-titulo-explora-main {
   width: 100%;

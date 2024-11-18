@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
 }
-body{
+$colornegro: #261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+$text-color: white; 
+.main-fondo{
     background-image: url(../assets/imagenes/gif-de-verdad.gif);
 }
 @import "menuyfooter";

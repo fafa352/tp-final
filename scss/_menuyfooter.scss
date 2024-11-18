@@ -6,7 +6,11 @@ $colormarron: #593936;
 
 header{
     width: 100%;
-    background-image: url(../assets/imagenes/gif-de-verdad.gif);
+    background-image: url(../assets/imagenes/menu.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 2px black;
+    background-position: 50% 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +32,7 @@ header{
             transition: 1s;
             &:hover{
                 rotate: 360deg;
+                filter: opacity(50%);
                 @keyframes rotate{
                     from{
                         transform: rotate(0deg);
@@ -57,7 +62,10 @@ header{
         .ul-cont-submenus {
             position: absolute;
             display: none;
-
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+            width: 100%;
 
             li {
                 display: block;
@@ -66,18 +74,18 @@ header{
 
         .li-cont-submenus-menu {
             position: relative;
-            font-size: 22px;
+            font-size: 20px;
 
             &:hover {
-                background-color: $colorvioleta;
-                box-shadow: 0 0 7px 1px $colorvioleta;
+                background-color: $colornegro;
+                box-shadow: 0 0 7px 1px $text-color;
                 
                 
 
                 .ul-cont-submenus {
                     display: block;
-                    background-color: $colorvioleta;
-                    box-shadow: 0 0 7px 1px $colorvioleta;
+                    background-color: $colornegro;
+                    box-shadow: 0 0 7px 1px $text-color;
                     width: 100%;
                 }
             }
@@ -85,8 +93,8 @@ header{
             a {
                 color: white;
                 text-decoration: none;
-                font-weight: 1000;
-                font-size: 20;
+                font-weight: 1000px;
+                font-size: 20px;
             }
         }
     }

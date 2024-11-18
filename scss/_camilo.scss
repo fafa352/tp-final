@@ -1,9 +1,6 @@
-$colornegro: #261A23;
-$colorvioletaoscuro: #4F2859;
-$colorvioleta: #6A378C;
-$colorcyan: #067373;
-$colormarron: #593936;
-$text-color: white; 
+#astro-noti{
+    padding-top: 10%;
+}
 
 .img-noti{
     width: 100%;
@@ -72,7 +69,7 @@ a{
 }
 #registro{
     font-family: Arial, sans-serif;
-    background-image: url(https://www.fayerwayer.com/resizer/v2/4QTSSOO2LREORNJURVEZSBIXTY.jpg?auth=53e2b4ee041bd22dc59edc7d4e4c0836c31d540db72dc02db9527ddc39bba7f5&width=800&height=534);
+    background-image: url(../assets/imagenes/patata.jpg);
     background-size: cover;
     background-position: center ; 
     color: $text-color;
