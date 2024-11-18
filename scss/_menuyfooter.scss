@@ -57,8 +57,10 @@ header{
             width: 100%;
             list-style: none;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
         .ul-cont-submenus {

@@ -46,8 +46,10 @@ header {
       width: 100%;
       list-style: none;
       display: flex;
-      justify-content: space-around;
-      align-items: center; }
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 !important;
+      padding: 0 !important; }
     header #cont-menu .ul-cont-submenus {
       position: absolute;
       display: none;
