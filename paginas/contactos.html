@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="icon" href="../assets/imagenes/logo.png">  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contactos - AMERI</title>
@@ -12,95 +13,92 @@
 
 </head>
 <body class="pagina-inicio">
-  <header>
-      <div id="cont-imagen-menu">
-          <img src="../assets/imagenes/logo.png" alt="Logo de Ameri" id="foto-menu">
-      </div>
-      <nav id="cont-menu">
-          <ul class="nav__ul">
-              <li class="li-cont-submenus-menu"><a href="">astroturismo</a>
-                  <ul class="ul-cont-submenus">
-                      <li class="li-submenus-menu"><a href="">agenda</a></li>
-                      <li class="li-submenus-menu"><a href="">cuerpo celestes</a></li>
-                      <li class="li-submenus-menu"><a href="">galaxia y agujero negro</a></li>
-                  </ul>
-              </li>
-              <li class="li-cont-submenus-menu"><a href="">introduccion a ameri</a>
-                  <ul class="ul-cont-submenus">
-                      <li class="li-submenus-menu"><a href="">preguntas</a></li>
-                      <li class="li-submenus-menu"><a href="">galeria</a></li>
-                  </ul>
-              </li>
-              <li class="li-cont-submenus-menu"><a href="">astronoticias</a></li>
-              <li class="li-cont-submenus-menu"><a href="">estudiar</a></li>
-              <li class="li-cont-submenus-menu"><a href="">contacto</a>
-                  <ul class="ul-cont-submenus">
-                      <li class="li-submenus-menu"><a href="">registro</a></li>
-                      <li class="li-submenus-menu"><a href="">suscripcion</a></li>
-                  </ul>
-              </li>
-          </ul>
-      </nav>
-  </header>
-  <main class="container mt-5">
-      <section class="row">
-          <div class="col-12 text-center mb-4">
-              <h1>Formulario de Contacto</h1>
-              <p class="lead">Ponte en contacto con nosotros a través de este formulario. ¡Estamos deseando conocerte!</p>
-          </div>
-          <div class="col-12 col-md-6 mx-auto">
-              <form class="contact-form" action="/ruta-de-envio" method="POST">
-                  <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="email" class="form-label">Correo Electrónico</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="mensaje" class="form-label">Mensaje</label>
-                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-violeta w-100">Enviar</button>
-              </form>
-          </div>
-      </section>
-  </main>
-  <footer class="footer bg-dark text-light py-5">
-    <div class="container">
-        <div class="row">
-            <section class="col-12 col-md-4 mb-4 mb-md-0">
-                <h2 class="footer-heading">Contacto</h2>
-                <ul class="list-unstyled">
-                    <li><strong>Teléfono:</strong> +123 456 789</li>
-                    <li><strong>Email:</strong> Ameri@gmail.com</li>
-                    <li><strong>Dirección:</strong> Calle 123</li>
-                    <li><strong>Horario:</strong> Lunes - Viernes: 9 AM - 6 PM</li>
+    <main class="container mt-5 container__contactos">
+        <section class="row section-container-formulario">
+            <div class="col-12 text-center mb-4 formulario__contactos__encabezado">
+                <h1 class="formulario__contactos__titulo">Formulario de Contacto</h1>
+                <p class="lead formulario__contactos__subtitulo">Ponte en contacto con nosotros a través de este formulario. ¡Estamos deseando conocerte!</p>
+            </div>
+            <div class="col-12 col-md-6 mx-auto container__formulario">
+                <form class="contact-form formulario__contactos" action="/ruta-de-envio" method="POST">
+                    <div class="mb-3 formulario__contactos__campo formulario__contactos__campo--nombre">
+                        <label for="nombre" class="form-label formulario__contactos__etiqueta">Nombre</label>
+                        <input type="text" class="form-control formulario__contactos__control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="mb-3 formulario__contactos__campo formulario__contactos__campo--email">
+                        <label for="email" class="form-label formulario__contactos__etiqueta">Correo Electrónico</label>
+                        <input type="email" class="form-control formulario__contactos__control" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="mb-3 formulario__contactos__campo formulario__contactos__campo--mensaje"> 
+                        <label for="mensaje" class="form-label formulario__contactos__etiqueta">Mensaje</label>
+                        <textarea class="form-control formulario__contactos__control" id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <div class="formulario__contactos__botones row">
+                        <div class="col-6 formulario__contactos__boton formulario__contactos__boton--submit">
+                            <a href="astronoticias.html" class="btn btn-violeta w-100 formulario__contactos__boton--cancelar">
+                                ENVIAR MENSAJE
+                            </a>
+                        </div>
+                        <div class="col-6 formulario__contactos__boton formulario__contactos__boton--cancelar">
+                            <a href="astronoticias.html" class="btn btn-violeta w-100 formulario__contactos__boton--cancelar">
+                                CANCELAR OPERACIÓN
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main> 
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__section footer__section--social">
+                <h2 class="footer__title">Redes Sociales</h2>
+                <nav>
+                    <ul class="footer__list">
+                    <li><p>Instagram</p></li>
+                    <li><p>X</p></li>
+                    <li><p>Facebook</p></li>
+                    </ul>
+                </nav>
+              </div>
+            <div class="footer__section footer__section--astroturismo">
+            <h2 class="footer__title">Astroturismo</h2>
+            <nav></nav>
+                <ul class="footer__list">
+                <li><a href="#" class="footer__link">Agenda</a></li>
+                <li><a href="#" class="footer__link">Cuerpos celestes</a></li>
+                <li><a href="#" class="footer__link">Galaxias y Agujeros negros</a></li>
                 </ul>
-            </section>
-            <section class="col-12 col-md-4 mb-4 mb-md-0">
-                <h2 class="footer-heading">Ubicación</h2>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13141.452659976892!2d-58.4116258!3d-34.5696763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1731529419456!5m2!1ses-419!2sar" 
-                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 mb-4 mb-md-0">
-                <h2 class="footer-heading">Enlaces Rápidos</h2>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="footer-link">Home</a></li>
-                    <li><a href="#" class="footer-link">Servicios</a></li>
-                    <li><a href="#" class="footer-link">Contactos</a></li>
-                    <li><a href="#" class="footer-link">Política de privacidad</a></li>
+            </nav>
+          </div>
+          <div class="footer__section footer__section--introduccion">
+            <h2 class="footer__title">Introduccion a Ameri</h2>
+            <nav>
+                <ul class="footer__list">
+                <li><a href="#" class="footer__link">Preguntas</a></li>
+                <li><a href="#" class="footer__link">Galeria</a></li>
                 </ul>
-            </section>
+            </nav>
+          </div>
+          <div class="footer__section footer__section--formularios">
+            <h2 class="footer__title">Formularios</h2>
+            <nav>
+                <ul class="footer__list">
+                <li><a href="#" class="footer__link">Contactos</a></li>
+                <li><a href="#" class="footer__link">Inicias Sesión</a></li>
+                <li><a href="#" class="footer__link">Registro</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="footer__section footer__section--map">
+            <h2 class="footer__title">Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13141.452659976892!2d-58.4116258!3d-34.5696763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses!2sar!4v1731866569268!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>    
         </div>
-        <div class="text-center mt-4">
-            <p>&copy; 2024 Ameri. Todos los derechos reservados.</p>
+        <div class="footer__bottom">
+          <p>&copy; 2024 AMERI. Todos los derechos reservados.</p>
         </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>
