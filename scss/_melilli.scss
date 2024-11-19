@@ -1,9 +1,16 @@
 $card-height: 400px;
+$colornegro: #261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+$color-texto: white;
+$color-footer: #161014;
 
 .text-home{
 
     color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0000;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
     animation: glow 1.5s infinite alternate;
 }
 
@@ -28,7 +35,6 @@ $card-height: 400px;
     display: flex;
     
     .text-explora-main{
-        
         font-size: 23px;
         text-align: center;
     }
@@ -49,10 +55,13 @@ $card-height: 400px;
 
 
 #main-home{
- 
-    background-color: black;
+
+  background-image: url(../assets/imagenes/fondohome.gif);
 }
 
+#main-cuerpoceleste{
+  background-image: url(../assets/imagenes/fondohome.gif);
+}
 
 .cards{
     height: $card-height;
@@ -67,20 +76,29 @@ $card-height: 400px;
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    
   
   
     &__item {
       flex: 1 1 calc(50% - 20px); // Dos columnas
-      max-width: 400px;
+      max-width: 700px;
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       text-align: center;
       transition: transform 0.3s;
+      border-radius: 10%;
+      
+      
   
       &:hover {
         transform: translateY(-5px);
+        animation: glow 1.5s infinite alternate;
+        color: $colorvioleta;
+        font-weight: 1000;
+        
+        
       }
   
       &__image {
@@ -99,7 +117,7 @@ $card-height: 400px;
       &__text {
         margin: 0 15px 15px;
         font-size: 1rem;
-        color: #555;
+        color: #000000;
       }
     }
   }
@@ -108,7 +126,12 @@ $card-height: 400px;
 
 
 
-
+  .text-monturas:hover{
+    animation: glow 1.5s infinite alternate;
+    color: $colorvioleta;
+    font-weight: 1000;
+    
+  }
 
 
 
@@ -117,7 +140,7 @@ $card-height: 400px;
 
   .content-section {
     padding: 50px 15px; // Márgenes arriba/abajo y pequeños márgenes laterales
- 
+
     text-align: center;
   
     .container {
@@ -128,7 +151,7 @@ $card-height: 400px;
     &__title {
       font-size: 3rem;
       font-weight: bold;
-      
+      color: #ffffff;
       margin-bottom: 20px;
       animation: fadeInDown 1s ease-out;
     }
@@ -144,11 +167,44 @@ $card-height: 400px;
   
     &__text {
       font-size: 1.2rem;
-
+      color: #ffffff;
       line-height: 1.8;
       animation: fadeInUp 1.2s ease-out;
     }
   
+    // Animaciones
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes scaleUp {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
   }
 
 
@@ -159,13 +215,6 @@ $card-height: 400px;
 
 
 
-
-
-
-
-
-
-  // Nueva animación para el título
 @keyframes pulse {
     0% {
       transform: scale(1);
@@ -178,7 +227,7 @@ $card-height: 400px;
     }
   }
   
-  // Nueva animación para la imagen
+ 
   @keyframes float {
     0% {
       transform: translateY(0);
@@ -191,20 +240,20 @@ $card-height: 400px;
     }
   }
   
-  // Nueva animación para el texto
+ 
   @keyframes glow {
     0% {
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
     }
     50% {
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
     }
     100% {
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
     }
   }
   
-  // Aplicar las nuevas animaciones
+
   .content-section__title {
     animation: pulse 2s infinite ease-in-out;
   }
@@ -306,17 +355,17 @@ $success-color: #28a745;
 
 
 
-.card-27 {
+.card-cuerpocelestes {
     text-align: center;
     margin-bottom: 30px;
   
-    &__title-27 {
+    &__title-cuerpocelestes {
       font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 15px;
     }
   
-    &__image-27 {
+    &__image-cuerpocelestes {
       width: 100%;
       height: auto;
       margin-bottom: 15px;
@@ -324,15 +373,15 @@ $success-color: #28a745;
       object-fit: cover;
     }
   
-    &__description-27 {
+    &__description-cuerpocelestes {
       font-size: 1rem;
-      color: #666;
+      color: #ffffff;
     }
   }
   
-  /* Responsividad para dispositivos pequeños */
+
   @media (max-width: 767px) {
-    .card-27 {
+    .card-cuerpocelestes {
       margin-bottom: 15px;
     }
   }
@@ -349,9 +398,22 @@ $success-color: #28a745;
 .imagen-sistemasolar{
     height: 700px;
     border-radius: 50%;
+    width: 100%;
 }
 
 .imagen-galaxia{
     height: 300px;
     border-radius: 70%;
+}
+
+
+
+.cont-agujeronegro{
+  margin-top: 8%;
+}
+
+
+.cont-sistemasolar{
+  margin-top: 5%;
+  padding-top: 5%;
 }
