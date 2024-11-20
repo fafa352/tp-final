@@ -76,10 +76,10 @@ header {
       header #cont-menu .li-cont-submenus-menu a {
         color: white;
         text-decoration: none;
-        font-weight: 1000px;
+        font-weight: 100px;
         font-size: 20px; }
   header #tit-pag {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     width: 100%; }
@@ -241,33 +241,25 @@ a {
   .tex h2 {
     font-size: 22px; } }
 
-.contenedor-del-grupo {
-  background-image: url("../assets/imagenes/gif-de-verdad.gif");
-  width: 100%; }
-
 .Texto-principal {
   text-align: center;
   justify-content: center;
-  background-image: url("../assets/imagenes/gif-de-verdad.gif");
   color: white;
-  height: 50px; }
+  height: 50px;
+  margin-top: 15px; }
 
 .header-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-image: url("../assets/imagenes/gif-de-verdad.gif"); }
+  width: 100%; }
 
 .header-container-cuadrado {
   width: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-image: url("../assets/imagenes/gif-de-verdad.gif");
-  margin-top: 5px; }
+  justify-content: center; }
 
 .header-container-cuadrado a {
   text-decoration: none;
@@ -437,12 +429,9 @@ a {
   padding: 0%;
   margin: 0%; }
 
-<<<<<<< HEAD
-=======
 body {
   background-image: url(../assets/imagenes/gif-de-verdad.gif); }
 
->>>>>>> 84983c24e0fd6f5d0fdc2d6888acf5e34a275430
 #div-titulo1 {
   justify-content: center;
   margin-top: 1%;

@@ -6,26 +6,19 @@ $colorcyan: #067373;
 $colormarron: #593936;
 
 
-.contenedor-del-grupo{
-  background-image: url('../assets/imagenes/gif-de-verdad.gif');
-  width: 100%;
-  
-}
 .Texto-principal{
   text-align: center;
   justify-content: center;
-  background-image: url('../assets/imagenes/gif-de-verdad.gif');
   color: white;
   height: 50px;
+  margin-top: 15px;
 }
 .header-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-image: url('../assets/imagenes/gif-de-verdad.gif');
-
+  width: 100%;  
 }
 
 .header-container-cuadrado {
@@ -33,10 +26,6 @@ $colormarron: #593936;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background-image: url('../assets/imagenes/gif-de-verdad.gif');
-  margin-top: 5px;
-
 }
 
 .header-container-cuadrado a {
