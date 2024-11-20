@@ -177,7 +177,9 @@ header {
   flex-direction: column;
   text-align: center;
   justify-content: flex-start;
-  color: white; }
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+  animation: glow 1.5s infinite alternate; }
   .main-div-tex h2 {
     font-size: 33px; }
   .main-div-tex #main-div-tex-noti3 {
@@ -193,9 +195,6 @@ header {
     text-decoration: none; }
     .main-div-tex .main-div-tex-sub:hover {
       text-decoration: underline; }
-  .main-div-tex a {
-    text-decoration: none;
-    color: white; }
 
 #main-div-desaparecer-gif {
   width: 100%;
@@ -218,9 +217,17 @@ header {
   background-image: url(../assets/imagenes/patata.jpg);
   background-size: cover;
   background-position: center;
-  color: white; }
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+  animation: glow 1.5s infinite alternate; }
   #registro .bot- {
     margin: 0 0 1% 0; }
+
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+  animation: glow 1.5s infinite alternate; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   #desaparecer {
@@ -434,36 +441,18 @@ header {
   padding: 0%;
   margin: 0%; }
 
-<<<<<<< HEAD
-=======
-body {
-  background-image: url(../assets/imagenes/gif-de-verdad.gif); }
-
->>>>>>> 84983c24e0fd6f5d0fdc2d6888acf5e34a275430
 #div-titulo1 {
+  display: flex;
   justify-content: center;
-  margin-top: 1%;
-  margin-left: 28%;
-  margin-right: 10%;
-  background-color: #048f8f;
-  color: black;
-  border-radius: 25px;
-  width: 550px;
-  height: 50px;
-  transition: width 2s, height 2s; }
+  color: white; }
 
 #div-titulo1:hover {
-  color: white;
-  width: 575px;
-  height: 60px;
-  background-color: #05a5b1; }
+  color: white; }
 
 #titulo1 {
+  display: flex;
   justify-content: center;
-  margin-top: 1%;
-  margin-left: 42%;
-  margin-right: 10%;
-  animation: aparecer 4s 5; }
+  animation: aparecer 4s; }
 
 @keyframes aparecer {
   from {
@@ -651,10 +640,9 @@ body {
 
 #titulo1-pag3 {
   justify-content: center;
-  margin-top: 1%;
   margin-left: 27%;
   margin-right: 10%;
-  animation: aparecer 4s 5;
+  animation: aparecer 4s;
   transition: transform 0.3s; }
 
 @keyframes aparecer {
@@ -706,12 +694,6 @@ body {
 .text-card {
   font-size: 15px;
   color: black; }
-
-#main-home {
-  background-image: url(../assets/imagenes/fondohome.gif); }
-
-#main-cuerpoceleste {
-  background-image: url(../assets/imagenes/fondohome.gif); }
 
 .cards {
   height: 400px; }

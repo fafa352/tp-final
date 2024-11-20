@@ -1,10 +1,4 @@
 $card-height: 400px;
-$colornegro: #261A23;
-$colorvioletaoscuro: #4F2859;
-$colorvioleta: #6A378C;
-$colorcyan: #067373;
-$colormarron: #593936;
-$color-texto: white;
 $color-footer: #161014;
 
 .text-home{
@@ -54,14 +48,9 @@ $color-footer: #161014;
 }
 
 
-#main-home{
 
-  background-image: url(../assets/imagenes/fondohome.gif);
-}
 
-#main-cuerpoceleste{
-  background-image: url(../assets/imagenes/fondohome.gif);
-}
+
 
 .cards{
     height: $card-height;

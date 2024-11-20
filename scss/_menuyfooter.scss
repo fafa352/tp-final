@@ -1,11 +1,3 @@
-$colornegro: #261A23;
-$colorvioletaoscuro: #4F2859;
-$colorvioleta: #6A378C;
-$colorcyan: #067373;
-$colormarron: #593936;
-$color-texto: white;
-$color-footer: #161014;
-
 header {
     width: 100%;
     background-image: url(../assets/imagenes/menu.gif);
@@ -112,7 +104,9 @@ header {
         width: 100%;
 
         h1 {
-            color: white;
+            color: $text-color;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+            animation: glow 1.5s infinite alternate;
             font-size: 2rem;
             margin: 0;
         }

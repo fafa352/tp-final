@@ -1,42 +1,14 @@
-*{
-    padding: 0%;
-    margin: 0%;
-}
-
-<<<<<<< HEAD
-
-=======
-body{
-    background-image: url(../assets/imagenes/gif-de-verdad.gif);
-}
->>>>>>> 84983c24e0fd6f5d0fdc2d6888acf5e34a275430
-
-
 #div-titulo1{
+    display: flex;
     justify-content: center;
-    margin-top: 1%;
-    margin-left: 28%;
-    margin-right: 10%;
-    background-color: rgb(4, 143, 143);
-    color: black;
-    border-radius: 25px;
-    width: 550px;
-    height: 50px;
-    transition: width 2s, height 2s;
-    }
-    #div-titulo1:hover{
-        color: white;
-        width: 575px;
-        height: 60px;
-        background-color: rgb(5, 165, 177);
+    color: $text-color;
 }
 
 #titulo1{
+    display: flex;
     justify-content: center;
-    margin-top: 1%;
-    margin-left: 42%;
-    margin-right: 10%;
-    animation: aparecer 4s 5;
+    color: $text-color;
+    animation: aparecer 4s;
 }
 @keyframes aparecer{
     from{
@@ -44,7 +16,7 @@ body{
     }
     to{
         opacity: 1;
-        color: white;
+        
     }
 }
 
@@ -272,11 +244,10 @@ body{
 }
 
 #titulo1-pag3{
+    display: flex;
     justify-content: center;
-    margin-top: 1%;
-    margin-left: 27%;
-    margin-right: 10%;
-    animation: aparecer 4s 5;
+    color: $text-color;
+    animation: aparecer 4s ;
     transition: transform 0.3s ;
 }
 @keyframes aparecer{
@@ -285,7 +256,7 @@ body{
     }
     to{
         opacity: 1;
-        color: white;
+        
     }
 }
 
