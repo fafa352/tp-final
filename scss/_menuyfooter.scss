@@ -6,7 +6,7 @@ $colormarron: #593936;
 $color-texto: white;
 $color-footer: #161014;
 
-header{
+header {
     width: 100%;
     background-image: url(../assets/imagenes/menu.gif);
     background-repeat: no-repeat;
@@ -17,8 +17,7 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
-    height: 350px;
-    
+    height: 450px;
 
     #cont-imagen-menu, #cont-menu {
         display: inline-block;
@@ -32,13 +31,14 @@ header{
             border-radius: 100%;
             border: solid white;
             transition: 1s;
-            &:hover{
+            &:hover {
                 rotate: 360deg;
                 filter: opacity(50%);
-                @keyframes rotate{
-                    from{
+                @keyframes rotate {
+                    from {
                         transform: rotate(0deg);
-                    }to{
+                    }
+                    to {
                         transform: rotate(7560deg);
                     }
                 }
@@ -57,8 +57,10 @@ header{
             width: 100%;
             list-style: none;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
         .ul-cont-submenus {
@@ -68,7 +70,6 @@ header{
             padding: 0 !important;
             text-align: center;
             width: 100%;
-
             li {
                 display: block;
             }
@@ -80,16 +81,19 @@ header{
 
             &:hover {
                 background-color: $colornegro;
-                box-shadow: 0 0 7px 1px $text-color;
-                
-                
+                box-shadow: 0 0 7px 1px $color-texto;
 
                 .ul-cont-submenus {
                     display: block;
                     background-color: $colornegro;
-                    box-shadow: 0 0 7px 1px $text-color;
+                    box-shadow: 0 0 7px 1px $color-texto;
                     width: 100%;
                 }
+            }
+
+            // Mostrar el submenú al hacer clic o al tener el foco (importante para móviles)
+            &:focus-within .ul-cont-submenus {
+                display: block;
             }
 
             a {
@@ -105,20 +109,27 @@ header{
         margin-top: 5%;
         display: flex;
         justify-content: center;
-        
         width: 100%;
 
         h1 {
             color: white;
             font-size: 2rem;
             margin: 0;
-
         }
     }
 }
 
-// Responsividad
+// Responsividad para pantallas más pequeñas (<= 768px) - Mostrar los submenús desplegados por defecto
 @media (max-width: 768px) {
+    header {
+        height: 400px;
+    }
+    
+    #tit-pag {
+        margin-top: 10%;
+
+    }
+
     #cont-imagen-menu, #cont-menu {
         display: block;
         width: 100%;
@@ -137,6 +148,9 @@ header{
 
     .ul-cont-submenus {
         width: 100%;
+        display: block;  /* Submenús visibles por defecto en dispositivos móviles */
+        background-color: $colornegro;
+        box-shadow: 0 0 7px 1px $color-texto;
     }
 
     #tit-pag h1 {
@@ -144,14 +158,26 @@ header{
     }
 }
 
+// Responsividad para pantallas más pequeñas (<= 480px)
 @media (max-width: 480px) {
+    header {
+        height: 350px;
+    }
+
     #cont-imagen-menu {
         width: 30%;
+
     }
+
     #tit-pag h1 {
         font-size: 1.2rem;
     }
 }
+
+
+
+
+
 
 .footer {
     background-color: $color-footer ;
