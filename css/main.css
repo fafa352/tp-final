@@ -120,7 +120,8 @@ header {
     font-size: 1.2rem; } }
 
 .footer {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  background-color: #20151d; }
   .footer__container {
     display: flex;
     flex-wrap: wrap;
@@ -138,11 +139,13 @@ header {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #4F2859;
-    display: inline-block; }
+    display: inline-block;
+    color: white; }
   .footer__list {
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    color: white; }
     .footer__list .footer__link {
       text-decoration: none;
       margin-bottom: 0.5rem;
@@ -154,7 +157,8 @@ header {
     margin-top: 2rem;
     font-size: 0.875rem;
     border-top: 1px solid;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    color: white; }
 
 #astro-noti {
   padding-top: 10%; }
@@ -325,7 +329,7 @@ a {
 
 .pagina-inicio {
   font-family: Arial, sans-serif;
-  background-image: url(../assets/imagenes/patata.jpg);
+  background-image: url(../assets/imagenes/imagen-footeryinicio.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -346,7 +350,7 @@ a {
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: black; }
+  color: white; }
   .formulario__contactos .formulario__contactos__control {
     border-radius: 4px;
     color: black;
@@ -366,6 +370,7 @@ a {
   display: inline-block;
   transition: background-color 0.3s;
   margin-bottom: 5%;
+  color: white;
   cursor: pointer; }
   .btn-violeta:hover {
     background-color: #4F2859; }
@@ -394,7 +399,8 @@ a {
 
 .titulo {
   font-size: xx-large;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  color: white; }
 
 .formulario {
   display: flex;
@@ -406,7 +412,8 @@ a {
   width: 100%; }
 
 .formulario__etiqueta {
-  display: inline-block; }
+  display: inline-block;
+  color: white; }
 
 .formulario__entrada {
   width: 100%;
@@ -436,8 +443,7 @@ a {
   color: #6A378C; }
 
 .formulario__enlace {
-  color: #755575;
-  text-decoration: none; }
+  color: #805e80; }
   .formulario__enlace:hover {
     text-decoration: underline; }
 

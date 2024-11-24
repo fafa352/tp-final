@@ -1,3 +1,12 @@
+$colornegro: #261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+$color-footer: #20151d;
+$color-texto: white;
+
+
 header {
     width: 100%;
     background-image: url(../assets/imagenes/menu.gif);
@@ -168,11 +177,12 @@ header {
 
 
 
-
+//--------------FOOTER------------------
 
 
 .footer {
     padding: 2rem 0;
+    background-color: $color-footer;
   
     &__container {
       display: flex;
@@ -201,12 +211,14 @@ header {
       margin-bottom: 1rem;
       border-bottom: 2px solid $colorvioletaoscuro;
       display: inline-block;
+      color: $color-texto;
     }
   
     &__list {
       list-style: none;
       padding: 0;
       margin: 0;
+      color: $color-texto;
   
       .footer__link {
         text-decoration: none;
@@ -225,5 +237,6 @@ header {
       font-size: 0.875rem;
       border-top: 1px solid;
       padding-top: 1rem;
+      color: $color-texto;
     }
   }

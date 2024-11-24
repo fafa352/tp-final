@@ -1,3 +1,12 @@
+$colornegro: #261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+$color-texto: white; 
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +15,21 @@
 //----------------------------------------------contactos
 .pagina-inicio {
   font-family: Arial, sans-serif;
-  background-image: url(../assets/imagenes/patata.jpg);
+  background-image: url(../assets/imagenes/imagen-footeryinicio.jpg);
   background-size: cover;
   background-position: center;
+
+
 }
 
 .container__contactos {
   padding: 3% 0;
-  color: white;
+  color: $color-texto;
+  
   
   .formulario__contactos__encabezado {
     .formulario__contactos__titulo {
-      color: white;
+      color: $color-texto;
       margin-bottom: 1%;
     }
 
@@ -37,7 +49,7 @@
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: $color-texto;
   .formulario__contactos__control{
     border-radius: 4px;
     color: black;
@@ -59,6 +71,7 @@
   display: inline-block; 
   transition: background-color 0.3s;
   margin-bottom: 5%;
+  color: $color-texto;
   cursor: pointer; 
 
   &:hover {
@@ -101,6 +114,7 @@
 .titulo {
   font-size: xx-large; 
   margin-bottom: 5%;
+  color: $color-texto;
 
 }
 
@@ -119,6 +133,7 @@
 
 .formulario__etiqueta{
   display: inline-block;
+  color: $color-texto;
 }
 
 .formulario__entrada {
@@ -155,11 +170,12 @@
 }
 
 .formulario__enlace {
-  color: rgb(117, 85, 117);
-  text-decoration: none;
+  color: rgb(128, 94, 128);
+  
 
-  &:hover {
+  &:hover{
       text-decoration: underline;
+    
   }
 }
 
