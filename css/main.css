@@ -64,10 +64,12 @@ header {
       position: relative;
       font-size: 20px; }
       header #cont-menu .li-cont-submenus-menu:hover {
-        background-color: #261A23; }
+        background-color: #261A23;
+        box-shadow: 0 0 7px 1px white; }
         header #cont-menu .li-cont-submenus-menu:hover .ul-cont-submenus {
           display: block;
           background-color: #261A23;
+          box-shadow: 0 0 7px 1px white;
           width: 100%; }
       header #cont-menu .li-cont-submenus-menu:focus-within .ul-cont-submenus {
         display: block; }
