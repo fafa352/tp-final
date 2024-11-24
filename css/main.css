@@ -431,6 +431,16 @@ a {
 body {
   background-image: url(../assets/imagenes/gif-de-verdad.gif); }
 
+#degradado {
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #d63b3b, rgba(1, 216, 198, 0.733)); }
+
+#degradado2 {
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #d63b3b, rgba(170, 252, 245, 0.733)); }
+
 #div-titulo1 {
   justify-content: center;
   margin-top: 1%;
@@ -490,7 +500,8 @@ body {
   margin-left: 28%;
   margin-right: 10%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  animation: aparecer 4s 5; }
+  animation: aparecer 4s 5;
+  color: white; }
 
 @keyframes aparecer {
   from {
@@ -520,7 +531,8 @@ body {
   justify-content: center;
   margin-left: 40%;
   margin-right: 1%;
-  animation: aparecer 4s 5; }
+  animation: aparecer 4s 5;
+  color: white; }
 
 @keyframes aparecer {
   from {
@@ -595,50 +607,73 @@ body {
 .cont-fotos2:hover {
   transform: scale(0.8); }
 
+#titulo1-pag2 {
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 19%;
+  margin-right: 10%;
+  animation: aparecer 4s 5;
+  color: white; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1;
+    color: white; } }
+
+#titulo2-pag2 {
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 19%;
+  margin-right: 10%;
+  transition: transform 0.3s ease;
+  color: white; }
+
+#titulo2-pag2:hover {
+  transform: scale(1.1); }
+
+#titulo3-pag2 {
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 35%;
+  margin-right: 10%;
+  color: white; }
+
+#titulo4-pag2 {
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 38%;
+  margin-right: 10%;
+  color: white; }
+
+#titulo5-pag2 {
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 31%;
+  margin-right: 10%;
+  color: white; }
+
+#titulo1-pag3:hover {
+  transform: scale(1.1); }
+
 #video-tamano {
   margin-top: 5%;
   margin-left: 22%;
   width: 710px;
   height: 450px; }
 
-#pasos-video {
-  justify-content: center;
-  margin-right: 100%;
-  animation: aparecer 4s 5; }
+#video-tamano2 {
+  margin-top: 2%;
+  margin-left: 22%;
+  width: 715px;
+  height: 450px; }
 
-@keyframes aparecer {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1;
-    color: white; } }
-
-#titulo1-pag2 {
-  justify-content: center;
-  margin-top: 1%;
-  margin-left: 44%;
-  margin-right: 10%;
-  animation: aparecer 4s 5; }
-
-@keyframes aparecer {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1;
-    color: white; } }
-
-#titulo4-pag2 {
-  font-size: 40px;
-  margin-top: 3%;
-  justify-content: center;
-  margin-left: 26%;
-  margin-right: 25%;
-  transition: transform 0.3s ease;
-  color: white; }
-
-#titulo4-pag2:hover {
-  transform: scale(1.2);
-  color: white; }
+#video-tamano3 {
+  margin-top: 5%;
+  margin-left: 22%;
+  width: 715px;
+  height: 450px; }
 
 #titulo1-pag3 {
   justify-content: center;
@@ -646,7 +681,8 @@ body {
   margin-left: 27%;
   margin-right: 10%;
   animation: aparecer 4s 5;
-  transition: transform 0.3s ease; }
+  transition: transform 0.3s ease;
+  color: white; }
 
 @keyframes aparecer {
   from {
@@ -659,14 +695,10 @@ body {
   transform: scale(1.1); }
 
 #accordionFlushExample {
-  align-items: center;
   justify-content: center;
   margin-top: 5%;
   margin-left: 25%;
   margin-right: 25%; }
-
-#letra-color-pag3 {
-  color: black; }
 
 .text-home {
   color: white;
