@@ -1,18 +1,10 @@
-$colornegro: #261A23;
-$colorvioletaoscuro: #4F2859;
-$colorvioleta: #6A378C;
-$colorcyan: #067373;
-$colormarron: #593936;
-$color-texto: white;
-$color-footer: #161014;
-
 header {
     width: 100%;
     background-image: url(../assets/imagenes/menu.gif);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 2px black;
-    background-position: 50% 75%;
+    background-position: 50% 97%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,12 +73,11 @@ header {
 
             &:hover {
                 background-color: $colornegro;
-                box-shadow: 0 0 7px 1px $color-texto;
+
 
                 .ul-cont-submenus {
                     display: block;
                     background-color: $colornegro;
-                    box-shadow: 0 0 7px 1px $color-texto;
                     width: 100%;
                 }
             }
@@ -99,20 +90,22 @@ header {
             a {
                 color: white;
                 text-decoration: none;
-                font-weight: 1000px;
+                font-weight: 100px;
                 font-size: 20px;
             }
         }
     }
 
     #tit-pag {
-        margin-top: 5%;
+        margin-top: 10%;
         display: flex;
         justify-content: center;
         width: 100%;
 
         h1 {
-            color: white;
+            color: $text-color;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+            animation: glow 1.5s infinite alternate;
             font-size: 2rem;
             margin: 0;
         }
@@ -150,7 +143,6 @@ header {
         width: 100%;
         display: block;  /* Submenús visibles por defecto en dispositivos móviles */
         background-color: $colornegro;
-        box-shadow: 0 0 7px 1px $color-texto;
     }
 
     #tit-pag h1 {
@@ -180,8 +172,6 @@ header {
 
 
 .footer {
-    background-color: $color-footer ;
-    color: $color-texto;
     padding: 2rem 0;
   
     &__container {
@@ -219,7 +209,6 @@ header {
       margin: 0;
   
       .footer__link {
-        color: $color-texto;
         text-decoration: none;
         margin-bottom: 0.5rem;
         display: block;

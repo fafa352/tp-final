@@ -23,7 +23,6 @@
 
     .formulario__contactos__subtitulo {
       font-size: x-large;
-      color: $color-texto;
       margin-bottom: 2%;
     }
   }
@@ -51,7 +50,6 @@
 
 .btn-violeta {
   background-color: $colorvioleta;
-  color: $color-texto;
   padding: 4% 7%; 
   border: none;
   border-radius: 4px;
@@ -74,7 +72,6 @@
 //----------------------------------------------------------inicio sesion
 
 .caja-login {
-  color: $color-texto;
   padding: 2%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -104,7 +101,7 @@
 .titulo {
   font-size: xx-large; 
   margin-bottom: 5%;
-  color: $color-texto;
+
 }
 
 .formulario {
@@ -122,7 +119,6 @@
 
 .formulario__etiqueta{
   display: inline-block;
-  color: $color-texto;
 }
 
 .formulario__entrada {
@@ -141,7 +137,6 @@
 
 .formulario__boton--iniciar-sesion {
   background-color: $colorvioleta;
-  color: $color-texto;
   padding: 2.5% 5%;
   border: none;
   border-radius: 5px;
