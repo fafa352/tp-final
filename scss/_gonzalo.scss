@@ -80,3 +80,36 @@ $colormarron: #593936;
     }
   }
 }
+.curso {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  
+  &__image {
+    width: 30%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  &__content {
+    width: 70%;
+    padding-left: 15px;
+    
+    &__title {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    
+    &__description {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+    &__button {
+      font-size: 25px;
+    }
+  }
+}

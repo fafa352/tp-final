@@ -145,6 +145,28 @@ a {
   .cuadrado .row {
     flex-direction: column; } }
 
+.curso {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px; }
+  .curso__image {
+    width: 30%; }
+    .curso__image img {
+      max-width: 100%;
+      height: auto; }
+  .curso__content {
+    width: 70%;
+    padding-left: 15px; }
+    .curso__content__title {
+      font-size: 35px;
+      margin-bottom: 10px; }
+    .curso__content__description {
+      font-size: 20px;
+      margin-bottom: 20px; }
+    .curso__content__button {
+      font-size: 25px; }
+
 * {
   padding: 0%;
   margin: 0%; }
