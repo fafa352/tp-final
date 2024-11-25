@@ -1,3 +1,12 @@
+$colornegro: #261A23;
+$colorvioletaoscuro: #4F2859;
+$colorvioleta: #6A378C;
+$colorcyan: #067373;
+$colormarron: #593936;
+$color-texto: white; 
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,24 +15,26 @@
 //----------------------------------------------contactos
 .pagina-inicio {
   font-family: Arial, sans-serif;
-  background-image: url(../assets/imagenes/patata.jpg);
+  background-image: url(../assets/imagenes/imagen-footeryinicio.jpg);
   background-size: cover;
   background-position: center;
+
+
 }
 
 .container__contactos {
   padding: 3% 0;
-  color: white;
+  color: $color-texto;
+  
   
   .formulario__contactos__encabezado {
     .formulario__contactos__titulo {
-      color: white;
+      color: $color-texto;
       margin-bottom: 1%;
     }
 
     .formulario__contactos__subtitulo {
       font-size: x-large;
-      color: $color-texto;
       margin-bottom: 2%;
     }
   }
@@ -38,7 +49,7 @@
   padding: 4%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: $color-texto;
   .formulario__contactos__control{
     border-radius: 4px;
     color: black;
@@ -51,7 +62,6 @@
 
 .btn-violeta {
   background-color: $colorvioleta;
-  color: $color-texto;
   padding: 4% 7%; 
   border: none;
   border-radius: 4px;
@@ -61,6 +71,7 @@
   display: inline-block; 
   transition: background-color 0.3s;
   margin-bottom: 5%;
+  color: $color-texto;
   cursor: pointer; 
 
   &:hover {
@@ -74,7 +85,6 @@
 //----------------------------------------------------------inicio sesion
 
 .caja-login {
-  color: $color-texto;
   padding: 2%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -105,6 +115,7 @@
   font-size: xx-large; 
   margin-bottom: 5%;
   color: $color-texto;
+
 }
 
 .formulario {
@@ -141,7 +152,6 @@
 
 .formulario__boton--iniciar-sesion {
   background-color: $colorvioleta;
-  color: $color-texto;
   padding: 2.5% 5%;
   border: none;
   border-radius: 5px;
@@ -160,11 +170,12 @@
 }
 
 .formulario__enlace {
-  color: rgb(117, 85, 117);
-  text-decoration: none;
+  color: rgb(128, 94, 128);
+  
 
-  &:hover {
+  &:hover{
       text-decoration: underline;
+    
   }
 }
 

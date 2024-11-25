@@ -199,5 +199,8 @@
     "yargs": "^17.7.2",
     "yargs-parser": "^20.2.9"
   },
-  "description": ""
+  "description": "pagina web sobre la astronomia con varias paginas para aprender de esta materia para niños y adultos",
+  "directories": {
+    "doc": "docs"
+  }
 }
