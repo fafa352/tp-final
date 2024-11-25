@@ -279,7 +279,7 @@ a {
   width: 93%;
   padding: 5px;
   margin-left: 4%;
-  background-color: rgba(136, 114, 114, 0.61); }
+  background-color: rgba(226, 226, 226, 0.792); }
   .main-contenedor .row {
     display: flex;
     align-items: center;
@@ -324,8 +324,6 @@ a {
     .curso__content__button {
       font-size: 25px; }
 
-<<<<<<< HEAD
-=======
 * {
   margin: 0;
   padding: 0;
@@ -451,7 +449,6 @@ a {
   .formulario__enlace:hover {
     text-decoration: underline; }
 
->>>>>>> 9fb3c78c22546fab47281acd7786f5aee1b0c3d1
 * {
   padding: 0%;
   margin: 0%; }
