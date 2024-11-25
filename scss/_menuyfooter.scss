@@ -25,11 +25,7 @@ header {
         font-weight: 100px;
         font-size: 20px;
     }
-    #cont-imagen-menu, #cont-menu {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
+    
         #cont-imagen-menu {
             width: 10%;
             #foto-menu {
@@ -76,6 +72,7 @@ header {
                 padding: 0 !important;
                 text-align: center;
                 width: 100%;
+                margin-bottom: 10%;
                 li {
                     display: block;
                 }
@@ -84,7 +81,7 @@ header {
             .li-cont-submenus-menu {
                 position: relative;
                 font-size: 20px;
-
+                margin-bottom: 55px;
                 &:hover {
                     background-color: $colornegro;
                     box-shadow: 0 0 7px 1px $color-texto;
@@ -97,7 +94,7 @@ header {
                         width: 100%;
                     }
                 }
-                        .li-cont-submenus-menu {
+                .li-cont-submenus-menu {
                 position: relative;
                 font-size: 20px;
 
@@ -121,27 +118,22 @@ header {
                 
             }
         }
-
-        #tit-pag {
-            margin-top: 10%;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            h1 {
-                color: $text-color;
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
-                animation: glow 1.5s infinite alternate;
-                font-size: 2rem;
-                margin: 0;
-            }
-        }
     }
+}
+#tit-pag {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+    animation: glow 1.5s infinite alternate;
+    color: $text-color;
+
 }
 // Responsividad para pantallas más pequeñas (<= 768px) - Mostrar los submenús desplegados por defecto
 @media (max-width: 768px) {
     header {
-        height: 400px;
+        height: 700px;
     }
     
     #tit-pag {
@@ -179,7 +171,7 @@ header {
 // Responsividad para pantallas más pequeñas (<= 480px)
 @media (max-width: 480px) {
     header {
-        height: 450px;
+        height: 700px;
     }
 
     #cont-imagen-menu {
