@@ -18,7 +18,9 @@ $colormarron: #593936;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;  
+  width: 100%;
+  height: 100px;
+  
 }
 
 .header-container-cuadrado {
@@ -42,7 +44,7 @@ $colormarron: #593936;
   width: 93%;
   padding: 5px;
   margin-left: 4%;
-  background-color: rgba(136, 114, 114, 0.61);
+  background-color: rgba(226, 226, 226, 0.792);
   .row {
     display: flex;
     align-items: center;
@@ -83,11 +85,14 @@ $colormarron: #593936;
 .curso {
   display: flex;
   border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.77);
   padding: 15px;
   margin-bottom: 20px;
-  
+  color: $colorcyan;
   &__image {
     width: 30%;
+    background-color: rgba(255, 255, 255, 0.77);
+
     img {
       max-width: 100%;
       height: auto;

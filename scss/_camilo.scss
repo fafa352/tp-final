@@ -78,15 +78,19 @@
     }
     
 }
-a{
-    text-decoration: none;
-    color: $text-color;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
-    animation: glow 1.5s infinite alternate;
+#astro-noti{
+    a{
+        text-decoration: none;
+        color: $text-color;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+        animation: glow 1.5s infinite alternate;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
-    img{
-        display: none;
+    #astro-noti{
+        img{
+            display: none;
+        }
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
