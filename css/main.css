@@ -216,7 +216,7 @@ header {
 
 #registro {
   font-family: Arial, sans-serif;
-  background-image: url(../assets/imagenes/patata.jpg);
+  background-image: url(../assets/imagenes/imagen-footeryinicio.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -232,14 +232,12 @@ a {
   animation: glow 1.5s infinite alternate; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  #desaparecer {
-    width: 0; }
-  .main-div-desaparecer-img-noti {
-    width: 0%; } }
+  img {
+    display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .astro-noti-div-desaparecer {
-    width: 0%; }
+    display: none; }
   .tex h2 {
     font-size: x-large; } }
 
