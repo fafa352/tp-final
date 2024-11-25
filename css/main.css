@@ -157,7 +157,8 @@ header {
     .footer__list .footer__link {
       text-decoration: none;
       margin-bottom: 0.5rem;
-      display: block; }
+      display: block;
+      color: #f9f9f9; }
       .footer__list .footer__link:hover {
         color: #6A378C; }
   .footer__bottom {
@@ -190,15 +191,17 @@ header {
   animation: glow 1.5s infinite alternate; }
   .main-div-tex h2 {
     font-size: 33px; }
-  .main-div-tex #main-div-tex-noti3 {
-    margin-top: 5%; }
-  .main-div-tex #main-div-tex-noti4 {
+  .main-div-tex #main-div-tex-noti2 {
     margin-top: 12%; }
+  .main-div-tex #main-div-tex-noti3 {
+    margin-top: 25%; }
+  .main-div-tex #main-div-tex-noti4 {
+    margin-top: 25%; }
   .main-div-tex #main-div-tex-noti5 {
-    margin-top: 14%; }
+    margin-top: 24%; }
   .main-div-tex #main-div-tex-noti6 {
     padding: 1% 0 0 0;
-    margin-top: 14%; }
+    margin-top: 26%; }
   .main-div-tex .main-div-tex-sub {
     text-decoration: none; }
     .main-div-tex .main-div-tex-sub:hover {
@@ -619,13 +622,11 @@ body {
 
 .cont-fotos1 {
   height: 400px;
-  width: 350px;
-  border: solid 8px #068c96; }
+  width: 350px; }
 
 .cont-fotos2 {
   height: 400px;
   width: 350px;
-  border: solid 10px #068c96;
   transition: transform 0.1s ease; }
 
 .cont-fotos2:hover {

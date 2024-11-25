@@ -200,13 +200,11 @@ margin-left: -5%;
 
 .cont-fotos1{
     @include medidasFotos(350px, 400px);
-    border: solid 8px rgb(6, 140, 150);
 }
 
 
 .cont-fotos2{
     @include medidasFotos(350px, 400px);
-    border: solid 10px rgb(6, 140, 150);
     transition: transform 0.1s ease;
 }
 
