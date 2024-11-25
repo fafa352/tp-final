@@ -313,10 +313,13 @@ header {
 .curso {
   display: flex;
   border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.77);
   padding: 15px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #067373; }
   .curso__image {
-    width: 30%; }
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.77); }
     .curso__image img {
       max-width: 100%;
       height: auto; }
