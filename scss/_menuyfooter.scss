@@ -4,7 +4,7 @@ $colorvioleta: #6A378C;
 $colorcyan: #067373;
 $colormarron: #593936;
 $color-footer: #20151d;
-$color-texto: white;
+$color-texto: rgb(249, 249, 249);
 
 
 header {
@@ -19,110 +19,125 @@ header {
     align-items: center;
     padding: 10px 0;
     height: 450px;
-
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 100px;
+        font-size: 20px;
+    }
     #cont-imagen-menu, #cont-menu {
         display: inline-block;
         vertical-align: middle;
     }
 
-    #cont-imagen-menu {
-        width: 10%;
-        #foto-menu {
-            width: 100%;
-            border-radius: 100%;
-            border: solid white;
-            transition: 1s;
-            &:hover {
-                rotate: 360deg;
-                filter: opacity(50%);
-                @keyframes rotate {
-                    from {
-                        transform: rotate(0deg);
-                    }
-                    to {
-                        transform: rotate(7560deg);
+        #cont-imagen-menu {
+            width: 10%;
+            #foto-menu {
+                width: 100%;
+                border-radius: 100%;
+                border: solid white;
+                transition: 1s;
+                &:hover {
+                    rotate: 360deg;
+                    filter: opacity(50%);
+                    @keyframes rotate {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(7560deg);
+                        }
                     }
                 }
             }
         }
-    }
 
-    #cont-menu {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        font-size: 0;
-
-        .nav__ul {
-            width: 100%;
-            list-style: none;
+        #cont-menu {
+            width: 80%;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
+            justify-content: center;
+            list-style: none;
+            font-size: 0;
 
-        .ul-cont-submenus {
-            position: absolute;
-            display: none;
-            margin: 0 !important;
-            padding: 0 !important;
-            text-align: center;
-            width: 100%;
-            li {
-                display: block;
+            .nav__ul {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 !important;
+                padding: 0 !important;
             }
-        }
 
-        .li-cont-submenus-menu {
-            position: relative;
-            font-size: 20px;
-
-            &:hover {
-                background-color: $colornegro;
-                box-shadow: 0 0 7px 1px $color-texto;
-
-
-                .ul-cont-submenus {
+            .ul-cont-submenus {
+                position: absolute;
+                display: none;
+                margin: 0 !important;
+                padding: 0 !important;
+                text-align: center;
+                width: 100%;
+                li {
                     display: block;
+                }
+            }
+
+            .li-cont-submenus-menu {
+                position: relative;
+                font-size: 20px;
+
+                &:hover {
                     background-color: $colornegro;
                     box-shadow: 0 0 7px 1px $color-texto;
-                    width: 100%;
+
+
+                    .ul-cont-submenus {
+                        display: block;
+                        background-color: $colornegro;
+                        box-shadow: 0 0 7px 1px $color-texto;
+                        width: 100%;
+                    }
                 }
-            }
-
-            // Mostrar el submenú al hacer clic o al tener el foco (importante para móviles)
-            &:focus-within .ul-cont-submenus {
-                display: block;
-            }
-
-            a {
-                color: white;
-                text-decoration: none;
-                font-weight: 100px;
+                        .li-cont-submenus-menu {
+                position: relative;
                 font-size: 20px;
+
+                &:hover {
+                    background-color: $colornegro;
+                    box-shadow: 0 0 7px 1px $color-texto;
+
+
+                    .ul-cont-submenus {
+                        display: block;
+                        background-color: $colornegro;
+                        box-shadow: 0 0 7px 1px $color-texto;
+                        width: 100%;
+                    }
+                }
+
+                &:focus-within .ul-cont-submenus {
+                    display: block;
+                }
+
+                
             }
         }
-    }
 
-    #tit-pag {
-        margin-top: 10%;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        #tit-pag {
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+            width: 100%;
 
-        h1 {
-            color: $text-color;
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
-            animation: glow 1.5s infinite alternate;
-            font-size: 2rem;
-            margin: 0;
+            h1 {
+                color: $text-color;
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #000000;
+                animation: glow 1.5s infinite alternate;
+                font-size: 2rem;
+                margin: 0;
+            }
         }
     }
 }
-
 // Responsividad para pantallas más pequeñas (<= 768px) - Mostrar los submenús desplegados por defecto
 @media (max-width: 768px) {
     header {
@@ -152,7 +167,7 @@ header {
 
     .ul-cont-submenus {
         width: 100%;
-        display: block;  /* Submenús visibles por defecto en dispositivos móviles */
+        display: block; 
         background-color: $colornegro;
     }
 
@@ -164,7 +179,7 @@ header {
 // Responsividad para pantallas más pequeñas (<= 480px)
 @media (max-width: 480px) {
     header {
-        height: 350px;
+        height: 450px;
     }
 
     #cont-imagen-menu {
